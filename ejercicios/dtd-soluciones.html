@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Soluciones. DTD. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Soluciones. DTD. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.svg" />
@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <h1>DTD - Soluciones </h1>
+  <h1>DTD - Solucións </h1>
 
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
@@ -100,21 +100,21 @@
     </div>
   </nav>
 
-  <p>Se ofrecen a continuación unas posibles soluciones de los <a href="dtd.html">ejercicios de DTD</a>. Estos ejercicios se pueden resolver de varias maneras. En las soluciones siguientes se proponen algunas posibilidades, pero otras son aceptables.</p>
+  <p>Se ofrecen a continuación unhas posibles solucións dos <a href="dtd.html">ejercicios de DTD</a>. Estos exercicios se pueden resolver de varias maneras. En as solucións seguintes se proponen algunhas posibilidades, pero outras son aceptables.</p>
 
   <section id="ejercicio-1">
-    <h2>DTD - Ejercicio 1 - Elementos sin atributos - Corregir errores en los elementos</h2>
+    <h2>DTD - Exercicio 1 - Elementos sin atributos - Corregir errores en os elementos</h2>
 
     <section id="ejercicio-1-1">
-      <h3>DTD - Ejercicio 1-1 - Números - Solución</h3>
+      <h3>DTD - Exercicio 1-1 - Números - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;numeros&gt;</span> es #PCDATA (texto), pero contiene un elemento <span class="xml-tag">&lt;numero&gt;</span> no definido en la DTD.
+        <li>O elemento <span class="xml-tag">&lt;numeros&gt;</span> es #PCDATA (texto), pero contiene un elemento <span class="xml-tag">&lt;numero&gt;</span> no definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 8, column 3: Element numeros was declared #PCDATA but contains non text nodes</pre>
           </div>
         </li>
-        <li>Para corregirlo, se podría eliminar el elemento <span class="xml-tag">&lt;numero&gt;</span>.</li>
+        <li>Para corregirlo, se podría eliminar o elemento <span class="xml-tag">&lt;numero&gt;</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -133,15 +133,15 @@
     </section>
 
     <section id="ejercicio-1-2">
-      <h3>DTD - Ejercicio 1-2 - Letras - Solución</h3>
+      <h3>DTD - Exercicio 1-2 - Letras - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;letras&gt;</span> debería contener un único elemento <span class="xml-tag">&lt;letra&gt;</span>, pero contiene dos.
+        <li>O elemento <span class="xml-tag">&lt;letras&gt;</span> debería contener un único elemento <span class="xml-tag">&lt;letra&gt;</span>, pero contiene dos.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 10, column 3: Element letras content does not follow the DTD, expecting (letra), got (letra letra )</pre>
           </div>
         </li>
-        <li>Para corregirlo, no queda más remedio que eliminar uno de los elementos <span class="xml-tag">&lt;letra&gt;</span>, por ejemplo, el segundo.</li>
+        <li>Para corregirlo, no queda máis remedio que eliminar uno dos elementos <span class="xml-tag">&lt;letra&gt;</span>, por ejemplo, o segundo.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -161,15 +161,15 @@
     </section>
 
     <section id="ejercicio-1-3">
-      <h3>DTD - Ejercicio 1-3 - Colores - Solución</h3>
+      <h3>DTD - Exercicio 1-3 - Colores - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;colores&gt;</span> debería contener únicamente elementos <span class="xml-tag">&lt;color&gt;</span>, pero no texto sin etiquetas.
+        <li>O elemento <span class="xml-tag">&lt;colores&gt;</span> debería contener únicamente elementos <span class="xml-tag">&lt;color&gt;</span>, pero no texto sin etiquetas.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 11, column 3: Element colores content does not follow the DTD, expecting (color)*, got (color CDATA color )</pre>
           </div>
         </li>
-        <li>Para corregirlo, se podrían añadir etiquetas <span class="xml-tag">&lt;color&gt;</span> alrededor del texto sin etiqueta.</li>
+        <li>Para corregirlo, se podrían añadir etiquetas <span class="xml-tag">&lt;color&gt;</span> alrededor do texto sin etiqueta.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -191,15 +191,15 @@
     </section>
 
     <section id="ejercicio-1-4">
-      <h3>DTD - Ejercicio 1-4 - Flores - Solución</h3>
+      <h3>DTD - Exercicio 1-4 - Flores - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;flores&gt;</span> debería contener al menos un elemento <span class="xml-tag">&lt;flor&gt;</span>, pero no tiene ninguno.
+        <li>O elemento <span class="xml-tag">&lt;flores&gt;</span> debería contener al menos un elemento <span class="xml-tag">&lt;flor&gt;</span>, pero no tiene ninguno.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 8, column 3: Element flores content does not follow the DTD, expecting (flor)+, got ()</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que añadir alguna etiqueta <span class="xml-tag">&lt;flor&gt;</span>.</li>
+        <li>Para corregirlo, habría que añadir algunha etiqueta <span class="xml-tag">&lt;flor&gt;</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -219,15 +219,15 @@
     </section>
 
     <section id="ejercicio-1-5">
-      <h3>DTD - Ejercicio 1-5 - Animales - Solución</h3>
+      <h3>DTD - Exercicio 1-5 - Animales - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;animales&gt;</span> sólo puede contener elementos <span class="xml-tag">&lt;animal&gt;</span>, no <span class="xml-tag">&lt;perro&gt;</span> ni <span class="xml-tag">&lt;gato&gt;</span>.
+        <li>O elemento <span class="xml-tag">&lt;animales&gt;</span> sólo puede contener elementos <span class="xml-tag">&lt;animal&gt;</span>, no <span class="xml-tag">&lt;perro&gt;</span> ni <span class="xml-tag">&lt;gato&gt;</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 10, column 3: Element animales content does not follow the DTD, expecting (animal)*, got (perro gato )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que sustituir las etiquetas <span class="xml-tag">&lt;perro&gt;</span> y <span class="xml-tag">&lt;gato&gt;</span> por <span class="xml-tag">&lt;animal&gt;</span>.</li>
+        <li>Para corregirlo, habría que sustituir as etiquetas <span class="xml-tag">&lt;perro&gt;</span> e <span class="xml-tag">&lt;gato&gt;</span> por <span class="xml-tag">&lt;animal&gt;</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -248,15 +248,15 @@
     </section>
 
     <section id="ejercicio-1-6">
-      <h3>DTD - Ejercicio 1-6 - Escritores - Solución</h3>
+      <h3>DTD - Exercicio 1-6 - Escritores - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;escritor&gt;</span> debe contener los elementos <span class="xml-tag">&lt;nombre&gt;</span> y <span class="xml-tag">&lt;nacimiento&gt;</span>, en ese orden.
+        <li>O elemento <span class="xml-tag">&lt;escritor&gt;</span> debe contener os elementos <span class="xml-tag">&lt;nombre&gt;</span> e <span class="xml-tag">&lt;nacimiento&gt;</span>, en ese orden.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 17, column 3: Element escritor content does not follow the DTD, expecting (nombre , nacimiento), got (nacimiento nombre )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que reordenar las etiquetas <span class="xml-tag">&lt;nacimiento&gt;</span> y <span class="xml-tag">&lt;nombre&gt;</span> en el segundo <span class="xml-tag">&lt;escritor&gt;</span>.</li>
+        <li>Para corregirlo, habría que reordenar as etiquetas <span class="xml-tag">&lt;nacimiento&gt;</span> e <span class="xml-tag">&lt;nombre&gt;</span> no segundo <span class="xml-tag">&lt;escritor&gt;</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -285,16 +285,16 @@
     </section>
 
     <section id="ejercicio-1-7">
-      <h3>DTD - Ejercicio 1-7 - Músicos - Solución</h3>
+      <h3>DTD - Exercicio 1-7 - Músicos - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;musico&gt;</span> puede contener los elementos <span class="xml-tag">&lt;nombre&gt;</span> o <span class="xml-tag">&lt;apodo&gt;</span>, pero no ambos.
+        <li>O elemento <span class="xml-tag">&lt;musico&gt;</span> puede contener os elementos <span class="xml-tag">&lt;nombre&gt;</span> o <span class="xml-tag">&lt;apodo&gt;</span>, pero no ambos.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 20, column 3: Element musico content does not follow the DTD, expecting ((nombre | apodo) , fechaNacimiento), got (nombre apodo fechaNacimiento )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que eliminar la etiqueta <span class="xml-tag">&lt;nombre&gt;</span> o la etiqueta <span class="xml-tag">&lt;apodo&gt;</span> en ambos <span class="xml-tag">&lt;musicos&gt;</span>.</li>
-        <li>Una posible solución (para no perder información, el texto del elemento eliminado se ha escrito entre paréntesis en el elemento no eliminado) sería entonces:
+        <li>Para corregirlo, habría que eliminar a etiqueta <span class="xml-tag">&lt;nombre&gt;</span> o a etiqueta <span class="xml-tag">&lt;apodo&gt;</span> en ambos <span class="xml-tag">&lt;musicos&gt;</span>.</li>
+        <li>Una posible solución (para no perder información, o texto do elemento eliminado se ha escrito entre paréntesis no elemento no eliminado) sería entonces:
           <div class="codigo">
             <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
@@ -308,11 +308,11 @@
 
 &lt;musicos&gt;
   &lt;musico&gt;
-    &lt;apodo&gt;El cura pelirrojillo (Antonio Vivaldi)&lt;/apodo&gt;
+    &lt;apodo&gt;O cura pelirrojillo (Antonio Vivaldi)&lt;/apodo&gt;
     &lt;fechaNacimiento&gt;4 de marzo de 1678&lt;/fechaNacimiento&gt;
   &lt;/musico&gt;
   &lt;musico&gt;
-    &lt;nombre&gt;Johann Sebastian Bach (El viejo peluca)&lt;/nombre&gt;
+    &lt;nombre&gt;Johann Sebastian Bach (O viejo peluca)&lt;/nombre&gt;
     &lt;fechaNacimiento&gt;21 de marzo de 1685&lt;/fechaNacimiento&gt;
   &lt;/musico&gt;
 &lt;/musicos&gt;</code>
@@ -323,21 +323,21 @@
     </section>
 
     <section id="ejercicio-1-8">
-      <h3>DTD - Ejercicio 1-8 - Teléfonos de emergencia - Solución</h3>
+      <h3>DTD - Exercicio 1-8 - Teléfonos de emergencia - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;contacto&gt;</span> puede contener primero cero o varios elementos <span class="xml-tag">&lt;telefonoFijo&gt;</span> y después uno o varios elementos <span class="xml-tag">&lt;telefonoMovil&gt;</span>, pero no en otro orden.
+        <li>O elemento <span class="xml-tag">&lt;contacto&gt;</span> puede contener primero cero o varios elementos <span class="xml-tag">&lt;telefonoFijo&gt;</span> e despois uno o varios elementos <span class="xml-tag">&lt;telefonoMovil&gt;</span>, pero no en otro orden.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 20, column 3: Element contacto content does not follow the DTD, expecting (nombre , telefonoFijo* , telefonoMovil+), got (nombre telefonoFijo telefonoMovil telefonoFijo )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que reordenar las etiquetas <span class="xml-tag">&lt;telefonoFijo&gt;</span> y <span class="xml-tag">&lt;telefonoMovil&gt;</span> en el segundo <span class="xml-tag">&lt;contacto&gt;</span>.</li>
-        <li>El elemento <span class="xml-tag">&lt;contacto&gt;</span> debe contener algún elemento <span class="xml-tag">&lt;telefonoMovil&gt;</span>.
+        <li>Para corregirlo, habría que reordenar as etiquetas <span class="xml-tag">&lt;telefonoFijo&gt;</span> e <span class="xml-tag">&lt;telefonoMovil&gt;</span> no segundo <span class="xml-tag">&lt;contacto&gt;</span>.</li>
+        <li>O elemento <span class="xml-tag">&lt;contacto&gt;</span> debe contener algún elemento <span class="xml-tag">&lt;telefonoMovil&gt;</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 14, column 3: Element contacto content does not follow the DTD, expecting (nombre , telefonoFijo* , telefonoMovil+), got (nombre telefonoFijo )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que añadir una etiqueta <span class="xml-tag">&lt;telefonoMovil&gt;</span> (aunque fuera vacía) en el primer <span class="xml-tag">&lt;contacto&gt;</span>.</li>
+        <li>Para corregirlo, habría que añadir unha etiqueta <span class="xml-tag">&lt;telefonoMovil&gt;</span> (aunque fuera vacía) no primer <span class="xml-tag">&lt;contacto&gt;</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -370,16 +370,16 @@
     </section>
 
     <section id="ejercicio-1-9">
-      <h3>DTD - Ejercicio 1-9 - El sistema solar - Solución</h3>
+      <h3>DTD - Exercicio 1-9 - O sistema solar - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;cuerpo&gt;</span> sólo puede contener un elemento (<span class="xml-tag">&lt;planeta&gt;</span>, <span class="xml-tag">&lt;satelite&gt;</span> o <span class="xml-tag">&lt;asteroide&gt;</span>).
+        <li>O elemento <span class="xml-tag">&lt;cuerpo&gt;</span> sólo puede contener un elemento (<span class="xml-tag">&lt;planeta&gt;</span>, <span class="xml-tag">&lt;satelite&gt;</span> o <span class="xml-tag">&lt;asteroide&gt;</span>).
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 14, column 12: element 'satelite' is not allowed for content model '(planeta|satelite|asteroide)'</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que crear dos elementos <span class="xml-tag">&lt;cuerpos&gt;</span>, uno para <span class="xml-tag">&lt;planeta&gt;</span> y otro para <span class="xml-tag">&lt;satelite&gt;</span>.</li>
-        <li>El elemento <span class="xml-tag">&lt;sistemaSolar&gt;</span> sólo puede contener elementos <span class="xml-tag">&lt;cuerpo&gt;</span>.
+        <li>Para corregirlo, habría que crear dos elementos <span class="xml-tag">&lt;cuerpos&gt;</span>, uno para <span class="xml-tag">&lt;planeta&gt;</span> e otro para <span class="xml-tag">&lt;satelite&gt;</span>.</li>
+        <li>O elemento <span class="xml-tag">&lt;sistemaSolar&gt;</span> sólo puede contener elementos <span class="xml-tag">&lt;cuerpo&gt;</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 16, column 3: element 'asteroide' is not allowed for content model '(cuerpo)'</pre>
           </div>
@@ -416,18 +416,18 @@
   </section>
 
   <section id="ejercicio-2">
-    <h2>DTD - Ejercicio 2 - Elementos sin atributos - Corregir errores en la DTD</h2>
+    <h2>DTD - Exercicio 2 - Elementos sin atributos - Corregir errores na DTD</h2>
 
     <section id="ejercicio-2-1">
-      <h3>DTD - Ejercicio 2-1 - Marcadores - Solución</h3>
+      <h3>DTD - Exercicio 2-1 - Marcadores - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento raíz es <span class="xml-tag">&lt;favoritos&gt;</span>, pero en el documento el elemento raíz es <span class="xml-tag">&lt;marcadores&gt;</span>.
+        <li>Según a DTD, o elemento raíz es <span class="xml-tag">&lt;favoritos&gt;</span>, pero no documento o elemento raíz es <span class="xml-tag">&lt;marcadores&gt;</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 18, column 3: No declaration for element marcadores</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar el nombre del elemento raíz de <span class="xml-tag">&lt;favoritos&gt;</span> a <span class="xml-tag">&lt;marcadores&gt;</span> y añadir la definición de ese elemento.</li>
+        <li>Para corregirlo, habría que cambiar o nombre do elemento raíz de <span class="xml-tag">&lt;favoritos&gt;</span> a <span class="xml-tag">&lt;marcadores&gt;</span> e añadir a definición de ese elemento.</li>
         <li>La solución sería entonces:
           <div class="codigo">
             <pre>
@@ -456,27 +456,27 @@
     </section>
 
     <section id="ejercicio-2-2">
-      <h3>DTD - Ejercicio 2-2 - Efemérides - Solución</h3>
+      <h3>DTD - Exercicio 2-2 - Efemérides - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento raíz <span class="xml-tag">&lt;efemerides&gt;</span> sólo puede contener un elemento <span class="xml-tag">&lt;efemeride&gt;</span>, pero en el documento hay varios.
+        <li>Según a DTD, o elemento raíz <span class="xml-tag">&lt;efemerides&gt;</span> sólo puede contener un elemento <span class="xml-tag">&lt;efemeride&gt;</span>, pero no documento hay varios.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 20, column 3: Element efemerides content does not follow the DTD, expecting (efemeride), got (efemeride efemeride efemeride )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;efemerides&gt;</span> puede contener varios elementos <span class="xml-tag">&lt;efemeride&gt;</span>.</li>
-        <li>El elemento <span class="xml-tag">&lt;hecho&gt;</span> no está definido en la DTD
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;efemerides&gt;</span> puede contener varios elementos <span class="xml-tag">&lt;efemeride&gt;</span>.</li>
+        <li>O elemento <span class="xml-tag">&lt;hecho&gt;</span> no está definido na DTD
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 18, column 47: No declaration for element hecho</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría definir el elemento <span class="xml-tag">&lt;hecho&gt;</span> de manera que contenga texto.</li>
-        <li>El elemento <span class="xml-tag">&lt;fecha&gt;</span> no está definido en la DTD
+        <li>Para corregirlo, habría definir o elemento <span class="xml-tag">&lt;hecho&gt;</span> de manera que contenga texto.</li>
+        <li>O elemento <span class="xml-tag">&lt;fecha&gt;</span> no está definido na DTD
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 18, column 28: No declaration for element fecha</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría definir el elemento <span class="xml-tag">&lt;fecha&gt;</span> de manera que contenga texto.</li>
+        <li>Para corregirlo, habría definir o elemento <span class="xml-tag">&lt;fecha&gt;</span> de manera que contenga texto.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -490,11 +490,11 @@
 
 &lt;efemerides&gt;
   &lt;efemeride&gt;
-    &lt;fecha&gt;20 de julio de 1969&lt;/fecha&gt;
-    &lt;hecho&gt;Llegada del hombre a la Luna&lt;/hecho&gt;
+    &lt;fecha&gt;20 de xullo de 1969&lt;/fecha&gt;
+    &lt;hecho&gt;Llegada do hombre a a Luna&lt;/hecho&gt;
   &lt;/efemeride&gt;
   &lt;efemeride&gt;
-    &lt;fecha&gt;12 de octubre de 1492&lt;/fecha&gt;
+    &lt;fecha&gt;12 de outubro de 1492&lt;/fecha&gt;
     &lt;hecho&gt;Llegada de Colón a América&lt;/hecho&gt;
   &lt;/efemeride&gt;
   &lt;efemeride&gt;
@@ -509,15 +509,15 @@
     </section>
 
     <section id="ejercicio-2-3">
-      <h3>DTD - Ejercicio 2-3 - Aeropuertos - Solución</h3>
+      <h3>DTD - Exercicio 2-3 - Aeropuertos - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;aeropuerto&gt;</span> debe contener un elemento <span class="xml-tag">&lt;cerrado&gt;</span>, pero en el documento ese elemento puede no existir.
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;aeropuerto&gt;</span> debe contener un elemento <span class="xml-tag">&lt;cerrado&gt;</span>, pero no documento ese elemento puede no existir.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 12, column 3: Element aeropuerto content does not follow the DTD, expecting (nombre , cerrado), got (nombre )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;cerrado&gt;</span> puede aparecer o no.</li>
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;cerrado&gt;</span> puede aparecer o no.</li>
         <li>La solución sería entonces:
           <div class="codigo">
             <pre>
@@ -545,15 +545,15 @@
     </section>
 
     <section id="ejercicio-2-4">
-      <h3>DTD - Ejercicio 2-4 - Vuelos - Solución</h3>
+      <h3>DTD - Exercicio 2-4 - Vuelos - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;vuelo&gt;</span> debe contener dos elementos <span class="xml-tag">&lt;origen&gt;</span> y <span class="xml-tag">&lt;destino&gt;</span> en ese orden, pero en el documento los elementos están en cualquier orden.
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;vuelo&gt;</span> debe contener dos elementos <span class="xml-tag">&lt;origen&gt;</span> e <span class="xml-tag">&lt;destino&gt;</span> en ese orden, pero no documento os elementos están en calquera orden.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 17, column 3: Element vuelo content does not follow the DTD, expecting (origen , destino), got (destino origen )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que los elementos <span class="xml-tag">&lt;origen&gt;</span> y <span class="xml-tag">&lt;destino&gt;</span> puede estar en cualquier orden.</li>
+        <li>Para corregirlo, habría que decir que os elementos <span class="xml-tag">&lt;origen&gt;</span> e <span class="xml-tag">&lt;destino&gt;</span> puede estar en calquera orden.</li>
         <li>La solución sería entonces:
           <div class="codigo">
             <pre>
@@ -582,27 +582,27 @@
     </section>
 
     <section id="ejercicio-2-5">
-      <h3>DTD - Ejercicio 2-5 - Reyes españoles - Solución</h3>
+      <h3>DTD - Exercicio 2-5 - Reyes espanoles - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;reyesEspañoles&gt;</span> debe contener primero elementos <span class="xml-tag">&lt;rey&gt;</span> y después elementos <span class="xml-tag">&lt;reina&gt;</span>, pero en el documento los elementos están en cualquier orden.
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;reyesEspanoles&gt;</span> debe contener primero elementos <span class="xml-tag">&lt;rey&gt;</span> e despois elementos <span class="xml-tag">&lt;reina&gt;</span>, pero no documento os elementos están en calquera orden.
           <div class="codigo">
-            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 26, column 3: Element reyesEspañoles content does not follow the DTD, expecting (rey* , reina*), got (rey reina rey )</pre>
+            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 26, column 3: Element reyesEspanoles content does not follow the DTD, expecting (rey* , reina*), got (rey reina rey )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que los elementos <span class="xml-tag">&lt;rey&gt;</span> y <span class="xml-tag">&lt;reina&gt;</span> pueden estar en cualquier orden.</li>
-        <li>El elemento <span class="xml-tag">&lt;reina&gt;</span> no está definido en la DTD.
+        <li>Para corregirlo, habría que decir que os elementos <span class="xml-tag">&lt;rey&gt;</span> e <span class="xml-tag">&lt;reina&gt;</span> pueden estar en calquera orden.</li>
+        <li>O elemento <span class="xml-tag">&lt;reina&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 21, column 3: No declaration for element reina</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que definir el elemento <span class="xml-tag">&lt;reina&gt;</span>, de la misma manera que está definido el elemento <span class="xml-tag">&lt;rey&gt;</span>.</li>
+        <li>Para corregirlo, habría que definir o elemento <span class="xml-tag">&lt;reina&gt;</span>, da misma manera que está definido o elemento <span class="xml-tag">&lt;rey&gt;</span>.</li>
         <li>La solución sería entonces:
           <div class="codigo">
             <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
-&lt;!DOCTYPE reyesEspañoles [
-  &lt;!ELEMENT reyesEspañoles (<span class="codigo-resaltado">(rey|reina)*</span>)&gt;
+&lt;!DOCTYPE reyesEspanoles [
+  &lt;!ELEMENT reyesEspanoles (<span class="codigo-resaltado">(rey|reina)*</span>)&gt;
   &lt;!ELEMENT rey (nombre, padre, madre)&gt;
   <span class="codigo-resaltado">&lt;!ELEMENT reina (nombre, padre, madre)&gt;</span>
   &lt;!ELEMENT nombre (#PCDATA)&gt;
@@ -610,23 +610,23 @@
   &lt;!ELEMENT madre (#PCDATA)&gt;
 ]&gt;
 
-&lt;reyesEspañoles&gt;
+&lt;reyesEspanoles&gt;
   &lt;rey&gt;
     &lt;nombre&gt;Felipe III&lt;/nombre&gt;
     &lt;padre&gt;Felipe II&lt;/padre&gt;
     &lt;madre&gt;Ana de Austria&lt;/madre&gt;
   &lt;/rey&gt;
   &lt;reina&gt;
-    &lt;nombre&gt;Juana la Loca&lt;/nombre&gt;
-    &lt;padre&gt;Fernando el Católico&lt;/padre&gt;
-    &lt;madre&gt;Isabel la Católica&lt;/madre&gt;
+    &lt;nombre&gt;Juana a Loca&lt;/nombre&gt;
+    &lt;padre&gt;Fernando o Católico&lt;/padre&gt;
+    &lt;madre&gt;Isabel a Católica&lt;/madre&gt;
   &lt;/reina&gt;
   &lt;rey&gt;
     &lt;nombre&gt;Carlos I&lt;/nombre&gt;
-    &lt;padre&gt;Felipe el Hermoso&lt;/padre&gt;
-    &lt;madre&gt;Juan la Loca&lt;/madre&gt;
+    &lt;padre&gt;Felipe o Hermoso&lt;/padre&gt;
+    &lt;madre&gt;Juan a Loca&lt;/madre&gt;
   &lt;/rey&gt;
-&lt;/reyesEspañoles&gt;</code>
+&lt;/reyesEspanoles&gt;</code>
 </pre>
           </div>
         </li>
@@ -634,27 +634,27 @@
     </section>
 
     <section id="ejercicio-2-6">
-      <h3>DTD - Ejercicio 2-6 - Países - Solución</h3>
+      <h3>DTD - Exercicio 2-6 - Países - Solución</h3>
 
       <ul>
-        <li>El elemento raíz <span class="xml-tag">&lt;paises&gt;</span> no está definido en la DTD.
+        <li>O elemento raíz <span class="xml-tag">&lt;paises&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 23, column 3: No declaration for element paises</pre>
           </div>
         </li>
         <li>Para corregirlo, habría que definirlo.</li>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;pais&gt;</span> debe contener los elementos <span class="xml-tag">&lt;nombre&gt;</span>, <span class="xml-tag">&lt;unionEuropea&gt;</span> y <span class="xml-tag">&lt;otan&gt;</span>, pero en el documento los elementos <span class="xml-tag">&lt;unionEuropea&gt;</span> y <span class="xml-tag">&lt;otan&gt;</span> a veces no aparecen.
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;pais&gt;</span> debe contener os elementos <span class="xml-tag">&lt;nombre&gt;</span>, <span class="xml-tag">&lt;unionEuropea&gt;</span> e <span class="xml-tag">&lt;otan&gt;</span>, pero no documento os elementos <span class="xml-tag">&lt;unionEuropea&gt;</span> e <span class="xml-tag">&lt;otan&gt;</span> a veces no aparecen.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 23, column 3: Element pais content does not follow the DTD, expecting (nombre , unionEuropea , otan), got (nombre unionEuropea )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que los elementos <span class="xml-tag">&lt;unionEuropea&gt;</span> y <span class="xml-tag">&lt;otan&gt;</span> pueden aparecer o no.</li>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;nombre&gt;</span> es vacío, pero en el documento contienen texto.
+        <li>Para corregirlo, habría que decir que os elementos <span class="xml-tag">&lt;unionEuropea&gt;</span> e <span class="xml-tag">&lt;otan&gt;</span> pueden aparecer o no.</li>
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;nombre&gt;</span> es vacío, pero no documento conteñen texto.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 21, column 18: Element nombre was declared EMPTY this one has content</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;nombre&gt;</span> contiene texto.</li>
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;nombre&gt;</span> contiene texto.</li>
         <li>La solución sería entonces:
           <div class="codigo">
             <pre>
@@ -689,16 +689,16 @@
     </section>
 
     <section id="ejercicio-2-7">
-      <h3>DTD - Ejercicio 2-7 - Códigos de colores - Solución</h3>
+      <h3>DTD - Exercicio 2-7 - Códigos de colores - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;color&gt;</span> no está definido en la DTD.
+        <li>O elemento <span class="xml-tag">&lt;color&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 21, column 3: No declaration for element color</pre>
           </div>
         </li>
         <li>Para corregirlo, habría que definirlo.</li>
-        <li>El elemento <span class="xml-tag">&lt;codigo&gt;</span> no está definido en la DTD.
+        <li>O elemento <span class="xml-tag">&lt;codigo&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 21, column 3: No declaration for element codigo</pre>
           </div>
@@ -738,22 +738,22 @@
     </section>
 
     <section id="ejercicio-2-8">
-      <h3>DTD - Ejercicio 2-8 - Contabilidad - Solución</h3>
+      <h3>DTD - Exercicio 2-8 - Contabilidad - Solución</h3>
 
       <ul>
-        <li>El elemento <span class="xml-tag">&lt;apunte&gt;</span> no está definido en la DTD.
+        <li>O elemento <span class="xml-tag">&lt;apunte&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 22, column 3: Element contabilidad content does not follow the DTD, expecting (ingreso | gasto)*, got (apunte apunte )</pre>
           </div>
         </li>
         <li>Para corregirlo, habría que definirlo.</li>
-        <li>El elemento <span class="xml-tag">&lt;ingreso&gt;</span> no está definido en la DTD.
+        <li>O elemento <span class="xml-tag">&lt;ingreso&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 18, column 9: No declaration for element gasto</pre>
           </div>
         </li>
         <li>Para corregirlo, habría que definirlo.</li>
-        <li>El elemento <span class="xml-tag">&lt;gasto&gt;</span> no está definido en la DTD.
+        <li>O elemento <span class="xml-tag">&lt;gasto&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 19, column 9: No declaration for element gasto</pre>
           </div>
@@ -776,13 +776,13 @@
 &lt;contabilidad&gt;
   &lt;apunte&gt;
     &lt;ingreso /&gt;
-    &lt;fecha&gt;24 de febrero de 2011&lt;/fecha&gt;
+    &lt;fecha&gt;24 de febreiro de 2011&lt;/fecha&gt;
     &lt;cantidad&gt;1800,00 &euro;&lt;/cantidad&gt;
     &lt;concepto&gt;Salario&lt;/concepto&gt;
   &lt;/apunte&gt;
   &lt;apunte&gt;
     &lt;gasto /&gt;
-    &lt;fecha&gt;28 de febrero de 2011&lt;/fecha&gt;
+    &lt;fecha&gt;28 de febreiro de 2011&lt;/fecha&gt;
     &lt;cantidad&gt;74,25 &euro;&lt;/cantidad&gt;
     &lt;concepto&gt;Recibo luz&lt;/concepto&gt;
   &lt;/apunte&gt;
@@ -794,27 +794,27 @@
     </section>
 
     <section id="ejercicio-2-9">
-      <h3>DTD - Ejercicio 2-9 - Mensajes - Solución</h3>
+      <h3>DTD - Exercicio 2-9 - Mensajes - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento raíz <span class="xml-tag">&lt;mensajes&gt;</span> sólo contiene un elemento <span class="xml-tag">&lt;mensaje&gt;</span>, pero en el documento contiene varios.
+        <li>Según a DTD, o elemento raíz <span class="xml-tag">&lt;mensajes&gt;</span> sólo contiene un elemento <span class="xml-tag">&lt;mensaje&gt;</span>, pero no documento contiene varios.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 24, column 3: Element mensajes content does not follow the DTD, expecting (mensaje), got (mensaje mensaje )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;mensaje&gt;</span> puede repetirse.</li>
-        <li>El elemento <span class="xml-tag">&lt;mensaje&gt;</span> no está definido en la DTD.
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;mensaje&gt;</span> puede repetirse.</li>
+        <li>O elemento <span class="xml-tag">&lt;mensaje&gt;</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 23, column 3: No declaration for element mensaje</pre>
           </div>
         </li>
         <li>Para corregirlo, habría que definirlo.</li>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;texto&gt;</span> sólo contiene texto, pero en el documento contiene también la etiqueta <span class="xml-tag">&lt;strong&gt;</span>.
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;texto&gt;</span> sólo contiene texto, pero no documento contiene tamén a etiqueta <span class="xml-tag">&lt;strong&gt;</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 23, column 41: Element texto was declared #PCDATA but contains non text nodes</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;texto&gt;</span> puede contener cualquier cosa.</li>
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;texto&gt;</span> puede contener calquera cosa.</li>
         <li>La solución sería entonces:
           <div class="codigo">
             <pre>
@@ -851,18 +851,18 @@
   </section>
 
   <section id="ejercicio-3">
-    <h2>DTD - Ejercicio 3 - Elementos con atributos - Corregir errores en los elementos</h2>
+    <h2>DTD - Exercicio 3 - Elementos con atributos - Corregir errores en os elementos</h2>
 
     <section id="ejercicio-3-1">
-      <h3>DTD - Ejercicio 3-1 - Datos personales - Solución</h3>
+      <h3>DTD - Exercicio 3-1 - Datos personales - Solución</h3>
 
       <ul>
-        <li>El atributo <span class="xml-attr">dni</span> no está definido en la DTD.
+        <li>O atributo <span class="xml-attr">dni</span> no está definido na DTD.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 7, column 13: No declaration for attribute dni of element persona</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que borrar el atributo <span class="xml-attr">dni</span>. La DTD no permite guardar la información en el documento</li>
+        <li>Para corregirlo, habría que borrar o atributo <span class="xml-attr">dni</span>. La DTD no permite guardar a información no documento</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -880,15 +880,15 @@
     </section>
 
     <section id="ejercicio-3-2">
-      <h3>DTD - Ejercicio 3-2 - Película - Solución</h3>
+      <h3>DTD - Exercicio 3-2 - Película - Solución</h3>
 
       <ul>
-        <li>El atributo <span class="xml-attr">genero</span> no está definido en la DTD.
+        <li>O atributo <span class="xml-attr">gxaneiro</span> no está definido na DTD.
           <div class="codigo">
-            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 7, column 24: No declaration for attribute genero of element pelicula</pre>
+            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 7, column 24: No declaration for attribute gxaneiro of element pelicula</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que borrar el atributo <span class="xml-attr">genero</span>. La DTD no permite guardar la información en el documento</li>
+        <li>Para corregirlo, habría que borrar o atributo <span class="xml-attr">gxaneiro</span>. La DTD no permite guardar a información no documento</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -906,21 +906,21 @@
     </section>
 
     <section id="ejercicio-3-3">
-      <h3>DTD - Ejercicio 3-3 - Cuadros - Solución</h3>
+      <h3>DTD - Exercicio 3-3 - Cuadros - Solución</h3>
 
       <ul>
-        <li>El atributo <span class="xml-attr">titulo</span> no se puede repetir ya que es de tipo ID.
+        <li>O atributo <span class="xml-attr">titulo</span> no se puede repetir xa que es de tipo ID.
           <div class="codigo">
-            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 11, column 33: ID Adán y Eva already defined</pre>
+            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 11, column 33: ID Adán e Eva already defined</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar al menos uno de los atributos <span class="xml-attr">titulo</span> para que no coincidan.</li>
+        <li>Para corregirlo, habría que cambiar al menos uno dos atributos <span class="xml-attr">titulo</span> para que no coincidan.</li>
         <li>Un atributo de tipo <strong>ID</strong> no puede contener espacios.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 11, column 35: Syntax of value for attribute titulo of cuadro is not valid</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que eliminar los espacios en el atributo <span class="xml-attr">titulo</span>.</li>
+        <li>Para corregirlo, habría que eliminar os espacios no atributo <span class="xml-attr">titulo</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -934,7 +934,7 @@
 
 &lt;cuadros&gt;
   &lt;cuadro titulo="<span class="codigo-resaltado">Adán_y_Eva_1</span>" autor="Alberto Durero" /&gt;
-  &lt;cuadro autor="Lucas Cranach, el viejo" titulo="<span class="codigo-resaltado">Adán_y_Eva_2</span>" /&gt;
+  &lt;cuadro autor="Lucas Cranach, o viejo" titulo="<span class="codigo-resaltado">Adán_y_Eva_2</span>" /&gt;
 &lt;/cuadros&gt;</code>
 </pre>
           </div>
@@ -943,15 +943,15 @@
     </section>
 
     <section id="ejercicio-3-4">
-      <h3>DTD - Ejercicio 3-4 - Lista de la compra - Solución</h3>
+      <h3>DTD - Exercicio 3-4 - Lista da compra - Solución</h3>
 
       <ul>
-        <li>No existen los elementos <span class="xml-tag">&lt;leche&gt;</span> o <span class="xml-tag">&lt;pan&gt;</span>.
+        <li>No existen os elementos <span class="xml-tag">&lt;leche&gt;</span> o <span class="xml-tag">&lt;pan&gt;</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 12, column 3: Element listaCompra content does not follow the DTD, expecting (item)*, got (leche pan )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que convertir las etiquetas <span class="xml-tag">&lt;leche&gt;</span> y <span class="xml-tag">&lt;pan&gt;</span> en etiquetas <span class="xml-tag">&lt;item&gt;</span>.</li>
+        <li>Para corregirlo, habría que convertir as etiquetas <span class="xml-tag">&lt;leche&gt;</span> e <span class="xml-tag">&lt;pan&gt;</span> en etiquetas <span class="xml-tag">&lt;item&gt;</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -974,7 +974,7 @@
     </section>
 
     <section id="ejercicio-3-5">
-      <h3>DTD - Ejercicio 3-5 - Jugadores de fútbol - Solución</h3>
+      <h3>DTD - Exercicio 3-5 - Jugadores de fútbol - Solución</h3>
 
       <ul>
         <li>Un atributo de tipo <strong>ID</strong> no puede empezar por un número.
@@ -982,13 +982,13 @@
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 23: Syntax of value for attribute codigo of jugador is not valid</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar los valores de los atributos <span class="xml-attr">codigo</span>.</li>
-        <li>El tipo <strong>NTOKENS</strong> no puede contener comas.
+        <li>Para corregirlo, habría que cambiar os valores dos atributos <span class="xml-attr">codigo</span>.</li>
+        <li>O tipo <strong>NTOKENS</strong> no puede contener comas.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 11, column 59: Syntax of value for attribute nombre of jugador is not valid</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que eliminar la coma.</li>
+        <li>Para corregirlo, habría que eliminar a coma.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -1013,7 +1013,7 @@
     </section>
 
     <section id="ejercicio-3-6">
-      <h3>DTD - Ejercicio 3-6 - Jugadores y equipos de fútbol - Solución</h3>
+      <h3>DTD - Exercicio 3-6 - Jugadores e equipos de fútbol - Solución</h3>
 
       <ul>
         <li>Un atributo de tipo <strong>IDREFS</strong> debe contener valores que coincidan con valores de atributos de tipo <strong>ID</strong>.
@@ -1021,13 +1021,13 @@
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 19, column 3: IDREFS attribute jugadores references an unknown ID "Maradona"</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar <strong>Cruyff</strong> por <strong>jc</strong> y <strong>Maradona</strong> por <strong>dam</strong>.</li>
-        <li>Los valores de un atributo de tipo <strong>IDREFS</strong> deben separarse por espacios, no por comas.
+        <li>Para corregirlo, habría que cambiar <strong>Cruyff</strong> por <strong>jc</strong> e <strong>Maradona</strong> por <strong>dam</strong>.</li>
+        <li>Los valores dun atributo de tipo <strong>IDREFS</strong> deben separarse por espacios, no por comas.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 19, column 3: IDREFS attribute jugadores references an unknown ID "jc,"</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que borrar la coma del atributo <span class="xml-attr">jugadores</span>.</li>
+        <li>Para corregirlo, habría que borrar a coma do atributo <span class="xml-attr">jugadores</span>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -1058,10 +1058,10 @@
   </section>
 
   <section id="ejercicio-4">
-    <h2>DTD - Ejercicio 4 - Elementos con atributos - Corregir errores en la DTD</h2>
+    <h2>DTD - Exercicio 4 - Elementos con atributos - Corregir errores na DTD</h2>
 
     <section id="ejercicio-4-1">
-      <h3>DTD - Ejercicio 4-1 - Libro - Solución</h3>
+      <h3>DTD - Exercicio 4-1 - Libro - Solución</h3>
 
       <ul>
         <li>Un atributo de tipo <strong>NMTOKEN</strong> no puede contener espacios.
@@ -1069,7 +1069,7 @@
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 7, column 13: Syntax of value for attribute autor of libro is not valid</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar el tipo de <strong>NMTOKEN</strong> a <strong>NMTOKENS</strong>.</li>
+        <li>Para corregirlo, habría que cambiar o tipo de <strong>NMTOKEN</strong> a <strong>NMTOKENS</strong>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -1087,27 +1087,27 @@
     </section>
 
     <section id="ejercicio-4-2">
-      <h3>DTD - Ejercicio 4-2 - Inventores - Solución</h3>
+      <h3>DTD - Exercicio 4-2 - Inventores - Solución</h3>
 
       <ul>
-        <li>La definición del elemento <span class="xml-tag">&lt;inventores&gt;</span> no es correcta puesto que no incluye el contenido.
+        <li>La definición do elemento <span class="xml-tag">&lt;inventores&gt;</span> no es correcta puesto que no incluye o contenido.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 4, column 4: Extra content at the end of the document</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que definir el contenido de <span class="xml-tag">&lt;inventores&gt;</span>.</li>
-        <li>Al último elemento <span class="xml-tag">&lt;inventor&gt;</span> le falta el atributo <span class="xml-attr">nombre</span>.
+        <li>Para corregirlo, habría que definir o contenido de <span class="xml-tag">&lt;inventores&gt;</span>.</li>
+        <li>Al último elemento <span class="xml-tag">&lt;inventor&gt;</span> le falta o atributo <span class="xml-attr">nombre</span>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 20: Element inventor does not carry attribute nombre</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el atributo <span class="xml-attr">nombre</span> no es obligatorio.</li>
+        <li>Para corregirlo, habría que decir que o atributo <span class="xml-attr">nombre</span> no es obligatorio.</li>
         <li>Un atributo de tipo <strong>ID</strong> no puede contener espacios.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 12, column 25: Syntax of value for attribute nombre of inventor is not valid</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar el tipo del atributo <span class="xml-attr">nombre</span> de <strong>ID</strong> a <strong>CDATA</strong>.</li>
+        <li>Para corregirlo, habría que cambiar o tipo do atributo <span class="xml-attr">nombre</span> de <strong>ID</strong> a <strong>CDATA</strong>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -1132,27 +1132,27 @@
     </section>
 
     <section id="ejercicio-4-3">
-      <h3>DTD - Ejercicio 4-3 - Cosas por hacer - Solución</h3>
+      <h3>DTD - Exercicio 4-3 - Cosas por hacer - Solución</h3>
 
       <ul>
-        <li>Según la DTD, el elemento raíz <span class="xml-tag">&lt;cosasPorHacer&gt;</span> sólo puede contener un elemento <span class="xml-tag">&lt;cosa&gt;</span>, pero en el documento hay varios.
+        <li>Según a DTD, o elemento raíz <span class="xml-tag">&lt;cosasPorHacer&gt;</span> sólo puede contener un elemento <span class="xml-tag">&lt;cosa&gt;</span>, pero no documento hay varios.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 15, column 3: Element cosasPorHacer content does not follow the DTD, expecting (cosa), got (cosa cosa )</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;cosasPorHacer&gt;</span> puede contener varios elementos <span class="xml-tag">&lt;cosa&gt;</span>.</li>
-        <li>El atributo <span class="xml-attr">asunto</span> no aparece en el documento.
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;cosasPorHacer&gt;</span> puede contener varios elementos <span class="xml-tag">&lt;cosa&gt;</span>.</li>
+        <li>O atributo <span class="xml-attr">asunto</span> no aparece no documento.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 14, column 21: Element cosa does not carry attribute asunto</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que eliminar el atributo <span class="xml-attr">asunto</span> o hacerlo optativo.</li>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;cosa&gt;</span> es un elemento vacío, pero en el documento contiene texto.
+        <li>Para corregirlo, habría que eliminar o atributo <span class="xml-attr">asunto</span> o hacerlo optativo.</li>
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;cosa&gt;</span> es un elemento vacío, pero no documento contiene texto.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 21: Element cosa was declared EMPTY this one has content</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que permitir que el elemento <span class="xml-tag">&lt;cosa&gt;</span> contenga texto.</li>
+        <li>Para corregirlo, habría que permitir que o elemento <span class="xml-tag">&lt;cosa&gt;</span> contenga texto.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -1165,9 +1165,9 @@
 ]&gt;
 
 &lt;cosasPorHacer&gt;
-  &lt;cosa fecha="20 de febrero de 2011" fechaLimite="1 de marzo de 2011"&gt;
-  Preparar ejercicios de DTDs&lt;/cosa&gt;
-  &lt;cosa fecha="21 de febrero de 2011" fechaLimite="5 de marzo de 2011"&gt;
+  &lt;cosa fecha="20 de febreiro de 2011" fechaLimite="1 de marzo de 2011"&gt;
+  Preparar exercicios de DTDs&lt;/cosa&gt;
+  &lt;cosa fecha="21 de febreiro de 2011" fechaLimite="5 de marzo de 2011"&gt;
   Preparar tema XSLT&lt;/cosa&gt;
 &lt;/cosasPorHacer&gt;</code>
 </pre>
@@ -1177,39 +1177,39 @@
     </section>
 
     <section id="ejercicio-4-4">
-      <h3>DTD - Ejercicio 4-4 - Resoluciones de pantalla - Solución</h3>
+      <h3>DTD - Exercicio 4-4 - Resolucións de pantalla - Solución</h3>
 
       <ul>
-        <li>Los atributos <span class="xml-attr">nombre</span>, <span class="xml-attr">alto</span> y <span class="xml-attr">ancho</span> están en el elemento <span class="xml-tag">&lt;resolucion&gt;</span>, no en <span class="xml-tag">&lt;resoluciones&gt;</span>.
+        <li>Los atributos <span class="xml-attr">nombre</span>, <span class="xml-attr">alto</span> e <span class="xml-attr">ancho</span> están no elemento <span class="xml-tag">&lt;resolucion&gt;</span>, no en <span class="xml-tag">&lt;resoluciones&gt;</span>.
           <div class="codigo">
-            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 3: Element resoluciones does not carry attribute alto.</pre>
+            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 3: Element resolucións does not carry attribute alto.</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que esos atributos son del elemento <span class="xml-tag">&lt;resolucion&gt;</span>.</li>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;resoluciones&gt;</span> es vacío, pero en el documento contiene elementos <span class="xml-tag">&lt;resolucion&gt;</span>.
+        <li>Para corregirlo, habría que decir que esos atributos son do elemento <span class="xml-tag">&lt;resolucion&gt;</span>.</li>
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;resoluciones&gt;</span> es vacío, pero no documento contiene elementos <span class="xml-tag">&lt;resolucion&gt;</span>.
           <div class="codigo">
-            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 3: Element resoluciones was declared EMPTY this one has content</pre>
+            <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 3: Element resolucións was declared EMPTY this one has content</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;resoluciones&gt;</span> puede contener elementos <span class="xml-tag">&lt;resolucion&gt;</span>.</li>
-        <li>El elemento <span class="xml-tag">&lt;resolucion&gt;</span> no está definido.
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;resoluciones&gt;</span> puede contener elementos <span class="xml-tag">&lt;resolucion&gt;</span>.</li>
+        <li>O elemento <span class="xml-tag">&lt;resolucion&gt;</span> no está definido.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 12, column 32: No declaration for element resolucion</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que definir el elemento <span class="xml-tag">&lt;resolucion&gt;</span>.</li>
-        <li>Según la DTD, el atributo <span class="xml-attr">nombre</span> no puede contener espacios.
+        <li>Para corregirlo, habría que definir o elemento <span class="xml-tag">&lt;resolucion&gt;</span>.</li>
+        <li>Según a DTD, o atributo <span class="xml-attr">nombre</span> no puede contener espacios.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 30: Syntax of value for attribute nombre of resolucion is not valid</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que cambiar el tipo del atributo <span class="xml-attr">nombre</span> de <strong>NMTOKEN</strong> a <strong>CDATA</strong>.</li>
+        <li>Para corregirlo, habría que cambiar o tipo do atributo <span class="xml-attr">nombre</span> de <strong>NMTOKEN</strong> a <strong>CDATA</strong>.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
-&lt;!DOCTYPE resoluciones [
-  &lt;!ELEMENT resoluciones <span class="codigo-resaltado">(resolucion*)</span>&gt;
+&lt;!DOCTYPE resolucións [
+  &lt;!ELEMENT resolucións <span class="codigo-resaltado">(resolucion*)</span>&gt;
   <span class="codigo-resaltado">&lt;!ELEMENT resolucion EMPTY&gt;</span>
   &lt;!ATTLIST <span class="codigo-resaltado">resolucion</span> nombre <span class="codigo-resaltado">CDATA</span> #REQUIRED&gt;
   &lt;!ATTLIST <span class="codigo-resaltado">resolucion</span> alto CDATA #REQUIRED&gt;
@@ -1228,21 +1228,21 @@
     </section>
 
     <section id="ejercicio-4-5">
-      <h3>DTD - Ejercicio 4-5 - Álbumes de Mortadelo y Filemón - Solución</h3>
+      <h3>DTD - Exercicio 4-5 - Álbumes de Mortadelo e Filemón - Solución</h3>
 
       <ul>
-        <li>Las listas de valores posibles de un atributo deben ir separados por la barra vertical <strong>|</strong>.
+        <li>Las listas de valores posibles dun atributo deben ir separados por a barra vertical <strong>|</strong>.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 6, column 25: Start tag expected, '&lt;' not found</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que sustituir las comas por barras verticales en el atributo fecha.</li>
-        <li>Según la DTD, el elemento <span class="xml-tag">&lt;album&gt;</span> contiene dos elementos <span class="xml-tag">&lt;nombre&gt;</span> y <span class="xml-tag">&lt;fecha&gt;</span>, pero en el documento <span class="xml-attr">nombre</span> y <span class="xml-attr">fecha</span> son atributos.
+        <li>Para corregirlo, habría que sustituir as comas por barras verticales no atributo fecha.</li>
+        <li>Según a DTD, o elemento <span class="xml-tag">&lt;album&gt;</span> contiene dos elementos <span class="xml-tag">&lt;nombre&gt;</span> e <span class="xml-tag">&lt;fecha&gt;</span>, pero no documento <span class="xml-attr">nombre</span> e <span class="xml-attr">fecha</span> son atributos.
           <div class="codigo">
             <pre><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" class="vmedio" />Error at line 13, column 22: Element album content does not follow the DTD, expecting (nombre , fecha), got</pre>
           </div>
         </li>
-        <li>Para corregirlo, habría que decir que el elemento <span class="xml-tag">&lt;album&gt;</span> es vacío.</li>
+        <li>Para corregirlo, habría que decir que o elemento <span class="xml-tag">&lt;album&gt;</span> es vacío.</li>
         <li>Una posible solución sería entonces:
           <div class="codigo">
             <pre>
@@ -1255,9 +1255,9 @@
 ]&gt;
 
 &lt;albumesMortadelo&gt;
-  &lt;album nombre="El sulfato atómico" fecha="1969"/&gt;
+  &lt;album nombre="O sulfato atómico" fecha="1969"/&gt;
   &lt;album nombre="La caja de diez cerrojos" fecha="1971"/&gt;
-  &lt;album nombre="El otro yo del profesor Bacterio" fecha="1973"/&gt;
+  &lt;album nombre="O otro yo do profesor Bacterio" fecha="1973"/&gt;
   &lt;album nombre="Los cacharros majaretas" fecha="1974"/&gt;
 &lt;/albumesMortadelo&gt;</code>
 </pre>
@@ -1268,9 +1268,9 @@
   </section>
 
   <section id="ejercicio-5">
-    <h2>DTD - Ejercicio 5 - DTDs alternativos</h2>
+    <h2>DTD - Exercicio 5 - DTDs alternativos</h2>
 
-    <p>Unas posibles soluciones serían las siguientes:</p>
+    <p>Unas posibles solucións serían as seguintes:</p>
     <ol>
       <li>DTD sin atributos, únicamente contiene etiquetas
 
@@ -1313,7 +1313,7 @@
       &lt;goles&gt;4&lt;/goles&gt;
     &lt;/local&gt;
     &lt;visitante&gt;
-      &lt;nombre&gt;Esteaua es del grifo&lt;/nombre&gt;
+      &lt;nombre&gt;Esteaua es do grifo&lt;/nombre&gt;
       &lt;goles&gt;2&lt;/goles&gt;
     &lt;/visitante&gt;
   &lt;/partido&gt;
@@ -1321,7 +1321,7 @@
 </pre>
         </div>
       </li>
-      <li>DTD en la que los goles sean atributos
+      <li>DTD na que os goles sean atributos
 
         <div class="codigo">
           <pre>
@@ -1346,13 +1346,13 @@
   &lt;/partido&gt;
   &lt;partido&gt;
     &lt;local goles="4"&gt;Water de Múnich&lt;/local&gt;
-    &lt;visitante goles="2"&gt;Esteaua es del grifo&lt;/visitante&gt;
+    &lt;visitante goles="2"&gt;Esteaua es do grifo&lt;/visitante&gt;
   &lt;/partido&gt;
 &lt;/ligaDeFutbol&gt;</code>
 </pre>
         </div>
       </li>
-      <li>DTD en la que toda la información se guarde en forma de atributos
+      <li>DTD na que toda a información se guarde en forma de atributos
 
         <div class="codigo">
           <pre>
@@ -1369,7 +1369,7 @@
 &lt;ligaDeFutbol&gt;
   &lt;partido localNombre="Nottingham Presa" localGoles="0" visitanteNombre="Inter de Mitente" visitanteGoles="1" /&gt;
   &lt;partido localNombre="Vodka Juniors" localGoles="3"  visitanteNombre="Sparta da Risa" visitanteGoles="3" /&gt;
-  &lt;partido localNombre="Water de Múnich" localGoles="4" visitanteNombre="Esteaua es del grifo" visitanteGoles="2" /&gt;
+  &lt;partido localNombre="Water de Múnich" localGoles="4" visitanteNombre="Esteaua es do grifo" visitanteGoles="2" /&gt;
 &lt;/ligaDeFutbol&gt;</code>
 </pre>
         </div>
@@ -1378,12 +1378,12 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 27 de abril de 2015</p>
+    <p class="ultmod">Última modificación de esta páxina: 27 de abril de 2015</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

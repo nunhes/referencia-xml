@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Soluciones. Documentos bien formados. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Soluciones. Documentos ben formados. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.svg" />
@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <h1>Documentos bien formados - Soluciones </h1>
+  <h1>Documentos ben formados - Solucións </h1>
 
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
@@ -46,18 +46,18 @@
     </div>
   </nav>
 
-  <p>Se ofrecen a continuación unas posibles soluciones de los <a href="documentos-bien-formados.html">ejercicios de Documentos bien formados</a>. Estos ejercicios se pueden resolver de varias maneras. En las soluciones siguientes se proponen algunas posibilidades, pero otras son aceptables.</p>
+  <p>Se ofrecen a continuación unhas posibles solucións dos <a href="documentos-bien-formados.html">ejercicios de Documentos ben formados</a>. Estos exercicios se pueden resolver de varias maneras. En as solucións seguintes se proponen algunhas posibilidades, pero outras son aceptables.</p>
 
   <section id="ejercicio-1">
-    <h2>WFD - Ejercicio 1 - Deportistas - Solución</h2>
+    <h2>WFD - Exercicio 1 - Deportistas - Solución</h2>
 
     <ul>
-      <li>En las etiquetas <span class="xml-tag">&lt;deporte&gt;</span> (líneas 4 y 7) aparecen los términos Atletismo y Natación sueltos.
+      <li>En as etiquetas <span class="xml-tag">&lt;deporte&gt;</span> (líneas 4 e 7) aparecen os términos Atletismo e Natación sueltos.
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 4, column 24: not well-formed (invalid token)</pre>
         </div>
-        <p>Se podría corregir escribiendo esos términos como valores de un atributo: </p>
+        <p>Se podría corregir escribiendo esos términos como valores dun atributo: </p>
 
         <div class="codigo">
           <pre>
@@ -66,7 +66,7 @@
     &lt;deporte <span class="codigo-resaltado">nombre="</span>Natación<span class="codigo-resaltado">"</span> /&gt;</code>
 </pre>
         </div>
-        <p>o como texto dentro de la etiqueta:</p>
+        <p>o como texto dentro da etiqueta:</p>
 
         <div class="codigo">
           <pre>
@@ -116,34 +116,34 @@
   </section>
 
   <section id="ejercicio-2">
-    <h2>WFD - Ejercicio 2 - Películas - Solución</h2>
+    <h2>WFD - Exercicio 2 - Películas - Solución</h2>
 
     <ul>
-      <li>No hay una etiqueta raíz que englobe el resto de etiquetas.
+      <li>No hay unha etiqueta raíz que englobe o resto de etiquetas.
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 6, column 1: junk after document element</pre>
         </div>
-        <p>Se podría corregir añadiendo una etiqueta raíz, cuyo nombre puede ser cualquiera, mientras no coincida con otra etiqueta, por ejemplo <span class="xml-tag">&lt;peliculas&gt;</span>: </p>
+        <p>Se podría corregir añadiendo unha etiqueta raíz, cuyo nombre puede ser cualquiera, mientras no coincida con otra etiqueta, por ejemplo <span class="xml-tag">&lt;peliculas&gt;</span>: </p>
 
         <div class="codigo">
           <pre>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 <span class="codigo-resaltado">&lt;peliculas&gt;</span>
   &lt;pelicula&gt;
-    &lt;titulo&gt;Con faldas y a lo loco&lt;/titulo&gt;
+    &lt;titulo&gt;Con faldas e a lo loco&lt;/titulo&gt;
  ...
   &lt;autor /&gt;barto&lt;/autor&gt;
 <span class="codigo-resaltado">&lt;/peliculas&gt;</span>
 </pre>
         </div>
       </li>
-      <li>La primera etiqueta &lt;autor&gt; tiene la barra de las etiquetas vacías, pero luego hay una etiqueta de cierre.
+      <li>La primera etiqueta &lt;autor&gt; tiene a barra de as etiquetas vacías, pero luego hay unha etiqueta de cierre.
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 11, column 17: mismatched tag</pre>
         </div>
-        <p>Se podría corregir borrando la barra: </p>
+        <p>Se podría corregir borrando a barra: </p>
 
         <div class="codigo">
           <pre><span class="codigo-resaltado">&lt;autor&gt;</span>barto&lt;/autor&gt;</pre>
@@ -156,7 +156,7 @@
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;peliculas&gt;
 &lt;pelicula&gt;
-  &lt;titulo&gt;Con faldas y a lo loco&lt;/titulo&gt;
+  &lt;titulo&gt;Con faldas e a lo loco&lt;/titulo&gt;
   &lt;director&gt;Billy Wilder&lt;/director&gt;
 &lt;/pelicula&gt;
 &lt;pelicula&gt;
@@ -172,21 +172,21 @@
   </section>
 
   <section id="ejercicio-3">
-    <h2>WFD - Ejercicio 3 - Texto - Solución</h2>
+    <h2>WFD - Exercicio 3 - Texto - Solución</h2>
 
     <ul>
-      <li>Las etiquetas de apertura y cierre no coinciden
+      <li>Las etiquetas de apertura e cierre no coinciden
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 3, column 38: mismatched tag</pre>
         </div>
-        <p>Se podría corregir modificando la etiqueta de apertura o la de cierre, por ejemplo: </p>
+        <p>Se podría corregir modificando a etiqueta de apertura o a de cierre, por ejemplo: </p>
 
         <div class="codigo">
-          <pre>  <span class="codigo-resaltado">&lt;titulo&gt;</span>XML explicado a los niños&lt;/titulo&gt;</pre>
+          <pre>  <span class="codigo-resaltado">&lt;titulo&gt;</span>XML explicado a os niños&lt;/titulo&gt;</pre>
         </div>
       </li>
-      <li>Los caracteres :// no están permitidos en las etiquetas
+      <li>Los caracteres :// no están permitidos nas etiquetas
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 8, column 10: not well-formed (invalid token)</pre>
@@ -203,9 +203,9 @@
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;texto&gt;
-  &lt;titulo&gt;XML explicado a los niños&lt;/titulo&gt;
-  &lt;párrafo&gt;El &lt;abreviatura&gt;XML&lt;/abreviatura&gt;define cómo crear
-  lenguajes de marcas.&lt;/párrafo&gt;
+  &lt;titulo&gt;XML explicado a os niños&lt;/titulo&gt;
+  &lt;párrafo&gt;O &lt;abreviatura&gt;XML&lt;/abreviatura&gt;define cómo crear
+  linguaxes de marcas.&lt;/párrafo&gt;
   &lt;párrafo&gt;Las marcas se añaden a un documento de texto
   para añadir información.&lt;/párrafo&gt;
   &lt;http&gt;www.example.org&lt;/http&gt;
@@ -217,15 +217,15 @@
   </section>
 
   <section id="ejercicio-4">
-    <h2>WFD - Ejercicio 4 - Información geográfica - Solución</h2>
+    <h2>WFD - Exercicio 4 - Información geográfica - Solución</h2>
 
     <ul>
-      <li>El nombre de las etiquetas no pueden contener espacios:
+      <li>O nombre de as etiquetas no pueden contener espacios:
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 2, column 19: not well-formed (invalid token)</pre>
         </div>
-        <p>Se podría corregir modificando la etiqueta de apertura o la de cierre, por ejemplo: </p>
+        <p>Se podría corregir modificando a etiqueta de apertura o a de cierre, por ejemplo: </p>
 
         <div class="codigo">
           <pre> <span class="codigo-resaltado">&lt;geografia_mundial&gt;</span>
@@ -247,7 +247,7 @@
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 6, column 24: not well-formed (invalid token)</pre>
         </div>
-        <p>Se podría corregir escribiendo el valor en el interior de la etiqueta, por ejemplo: </p>
+        <p>Se podría corregir escribiendo o valor no interior da etiqueta, por ejemplo: </p>
 
         <div class="codigo">
           <pre><span class="codigo-resaltado">&lt;capital&gt;Madrid&lt;/capital&gt;</span></pre>
@@ -272,7 +272,7 @@
   </section>
 
   <section id="ejercicio-5">
-    <h2>WFD - Ejercicio 5 - Programas - Solución</h2>
+    <h2>WFD - Exercicio 5 - Programas - Solución</h2>
 
     <ul>
       <li>Los atributos no se pueden repetir:
@@ -280,19 +280,19 @@
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 3, column 45: duplicate attribute</pre>
         </div>
-        <p>Se podría corregir uniendo los atributos en un único atributo, por ejemplo: </p>
+        <p>Se podría corregir uniendo os atributos nun único atributo, por ejemplo: </p>
 
         <div class="codigo">
           <pre>   &lt;programa nombre="Firefox" <span class="codigo-resaltado">licencia="GPL MPL"</span> /&gt;</pre>
         </div>
-        <p>o duplicando las etiquetas, por ejemplo:</p>
+        <p>o duplicando as etiquetas, por ejemplo:</p>
 
         <div class="codigo">
           <pre>   &lt;programa nombre="Firefox" <span class="codigo-resaltado">licencia="GPL"</span> /&gt;
    &lt;programa nombre="Firefox" <span class="codigo-resaltado">licencia="MPL"</span> /&gt;</pre>
         </div>
       </li>
-      <li>Los valores de los atributos deben ir entre comillas:
+      <li>Los valores dos atributos deben ir entre comillas:
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 4, column 46: not well-formed (invalid token)</pre>
@@ -320,7 +320,7 @@
   </section>
 
   <section id="ejercicio-6">
-    <h2>WFD - Ejercicio 6 - Mundiales de fútbol - Solución</h2>
+    <h2>WFD - Exercicio 6 - Mundiales de fútbol - Solución</h2>
 
     <ul>
       <li>Las etiquetas necesitan tener un nombre de etiqueta:
@@ -333,7 +333,7 @@
         <div class="codigo">
           <pre>   &lt;pais <span class="codigo-resaltado">nombre="</span>España<span class="codigo-resaltado">"</span> /&gt;</pre>
         </div>
-        <p>o escribiendo el valor como contenido de la etiqueta, por ejemplo:</p>
+        <p>o escribiendo o valor como contenido da etiqueta, por ejemplo:</p>
 
         <div class="codigo">
           <pre>   <span class="codigo-resaltado">&lt;pais&gt;España&lt;/pais&gt;</span></pre>
@@ -347,12 +347,12 @@
         <p>Se podría corregir añadiendo un nombre de etiqueta, por ejemplo: </p>
 
         <div class="codigo">
-          <pre>     &lt;<span class="codigo-resaltado">año valor="</span>1982<span class="codigo-resaltado">"</span> /&gt;</pre>
+          <pre>     &lt;<span class="codigo-resaltado">ano valor="</span>1982<span class="codigo-resaltado">"</span> /&gt;</pre>
         </div>
-        <p>o escribiendo el valor como contenido de una etiqueta, por ejemplo:</p>
+        <p>o escribiendo o valor como contenido de unha etiqueta, por ejemplo:</p>
 
         <div class="codigo">
-          <pre>   <span class="codigo-resaltado">&lt;año&gt;1982&lt;/año&gt;</span></pre>
+          <pre>   <span class="codigo-resaltado">&lt;ano&gt;1982&lt;/ano&gt;</span></pre>
         </div>
       </li>
       <li>Una posible solución sería entonces:
@@ -363,7 +363,7 @@
 &lt;mundiales-de-futbol&gt;
   &lt;mundial&gt;
     &lt;pais&gt;España&lt;/pais&gt;
-    &lt;año&gt;1982&lt;/año&gt;
+    &lt;ano&gt;1982&lt;/ano&gt;
   &lt;/mundial&gt;
 &lt;/mundiales-de-futbol&gt;</code>
 </pre>
@@ -373,15 +373,15 @@
   </section>
 
   <section id="ejercicio-7">
-    <h2>WFD - Ejercicio 7 - Medios de transporte - Solución</h2>
+    <h2>WFD - Exercicio 7 - Medios de transporte - Solución</h2>
 
     <ul>
-      <li>El carácter inferior a (&lt;) sólo puede utilizarse como inicio de etiqueta:
+      <li>O carácter inferior a (&lt;) sólo puede utilizarse como inicio de etiqueta:
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 3, column 26: not well-formed (invalid token)</pre>
         </div>
-        <p>Se podría corregir escribiendo la entidad de carácter correspondiente, por ejemplo: </p>
+        <p>Se podría corregir escribiendo a entidad de carácter correspondiente, por ejemplo: </p>
 
         <div class="codigo">
           <pre>  &lt;bicicleta velocidad="v<span class="codigo-resaltado">&amp;lt;</span>100km/h" /&gt;</pre>
@@ -392,18 +392,18 @@
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 4, column 23: not well-formed (invalid token)</pre>
         </div>
-        <p>Se podría corregir modificando el nombre del atributo, por ejemplo:</p>
+        <p>Se podría corregir modificando o nombre do atributo, por ejemplo:</p>
 
         <div class="codigo">
           <pre>  &lt;patinete <span class="codigo-resaltado">velocidad-maxima</span>="50 km/h"</pre>
         </div>
       </li>
-      <li>Las etiquetas deben terminar por el carácter superior a (&gt;):
+      <li>Las etiquetas deben terminar por o carácter superior a (&gt;):
 
         <div class="codigo">
           <pre><img src="../varios/iconos/icono-warning-xmlcopyeditor.svg" alt="Error" title="Error" width="37" height="36" class="vmedio" />Error at line 5, column 1: not well-formed (invalid token)</pre>
         </div>
-        <p>Se podría corregir añadiendo los caracteres /&gt; finales, por ejemplo: </p>
+        <p>Se podría corregir añadiendo os caracteres /&gt; finales, por ejemplo: </p>
 
         <div class="codigo">
           <pre>  &lt;patinete velocidad-maxima="50 km/h" <span class="codigo-resaltado">/&gt;</span></pre>
@@ -425,12 +425,12 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 27 de abril de 2015</p>
+    <p class="ultmod">Última modificación de esta páxina: 27 de abril de 2015</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

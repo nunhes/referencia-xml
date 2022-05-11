@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Examen 08/05/12. Exámenes. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Exame 08/05/12. Exámenes. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../../varios/favicon.svg" />
@@ -11,17 +11,17 @@
 </head>
 
 <body>
-  <h1>Examen 8 de mayo de 2012</h1>
+  <h1>Exame 8 de maio de 2012</h1>
 
   <nav>
     <p>
       <a href="../../index.html"><img src="../../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
       <a href="../examenes.html"><img src="../../varios/iconos/icono-school.svg" alt="Exámenes" title="Exámenes" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
-      <h2>Examen 08/05/12</h2>
+      <h2>Exame 08/05/12</h2>
 
       <ol>
         <li><a href="#ejercicio-1">XPath</a></li>
@@ -30,12 +30,12 @@
     </div>
   </nav>
 
-  <p>Resuelva los siguientes ejercicios guardando las respuestas en una carpeta con su nombre y apellidos. Los nombres de los ficheros están indicados en los enunciados (NAA corresponde a sus propias iniciales, Nombre Apellido1 Apellido2)</p>
+  <p>Resuelva os seguintes exercicios guardando as respostas en unha carpeta con su nombre e apellidos. Los nombres dos ficheros están indicados en os enunciados (NAA corresponde a sus propias iniciales, Nombre Apellido1 Apellido2)</p>
 
   <section id="ejercicio-1">
-    <h2>Ejercicio 1. XPath</h2>
+    <h2>Exercicio 1. XPath</h2>
 
-    <p>Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan <strong>exactamente</strong> la respuesta indicadas en los cuadros. Escriba todas las expresiones XPath en un único fichero NAA_1.txt, numerando las respuestas.</p>
+    <p>Dado o seguinte documento XML, escriba as expresións XPath que devolvan <strong>exactamente</strong> a resposta indicadas en os cuadros. Escriba todas as expresións XPath nun único fichero NAA_1.txt, numerando as respostas.</p>
 
     <div class="codigo">
       <pre>
@@ -80,7 +80,7 @@
     </div>
 
     <ol>
-      <li>Nombre del Instituto:
+      <li>Nombre do Instituto:
         <div class="resultado-xpath">
           <pre><code class="language-xml">cliente="IES Abastos"</code></pre>
         </div>
@@ -106,7 +106,7 @@
         </div>
       </li>
 
-      <li>Ocupantes de los espacios:
+      <li>Ocupantes dos espacios:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">1º ASIR (mañana)
@@ -117,7 +117,7 @@
         </div>
       </li>
 
-      <li>Ocupantes del aula A112:
+      <li>Ocupantes do aula A112:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">2º ASIR (mañana)
@@ -126,7 +126,7 @@
         </div>
       </li>
 
-      <li>Modelos de la marca Inves:
+      <li>Modelos da marca Inves:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">&lt;modelo&gt;Sierra DT6300A&lt;/modelo&gt;
@@ -135,7 +135,7 @@
         </div>
       </li>
 
-      <li>Dispositivos que se encuentran en el aula 116:
+      <li>Dispositivos que se encuentran no aula 116:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml"> <span class="xml-attr">id</span>="PC"
@@ -154,7 +154,7 @@
         </div>
       </li>
 
-      <li>Grupos que dan clase en un aula con proyector:
+      <li>Grupos que dan clase nun aula con proyector:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">1º ASIR (mañana)
@@ -166,82 +166,82 @@
   </section>
 
   <section id="ejercicio-2">
-    <h2>Ejercicio 2 . XSLT</h2>
+    <h2>Exercicio 2 . XSLT</h2>
 
-    <p>Dado el siguiente documento XML, escriba y enlace las hojas de estilo XSLT que devuelvan la respuesta deseada (una para cada caso).</p>
+    <p>Dado o seguinte documento XML, escriba e enlace as follas de estilo XSLT que devolvan a resposta desexada (una para cada caso).</p>
 
-    <p>Los nombres de los ficheros deben ser NAA_2-1.xml y NAA_2-1.xsl, etc.</p>
+    <p>Los nombres dos ficheros deben ser NAA_2-1.xml e NAA_2-1.xsl, etc.</p>
 
     <div class="codigo">
       <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
-&lt;lenguajes fuente="http://www.wikipedia.org" fecha="2012"&gt;
-  &lt;lenguaje&gt;
+&lt;linguaxes fuente="http://www.wikipedia.org" fecha="2012"&gt;
+  &lt;linguaxe&gt;
     &lt;nombre&gt;C&lt;/nombre&gt;
     &lt;creador&gt;Dennis Ritchie&lt;/creador&gt;
     &lt;fecha&gt;1973&lt;/fecha&gt;
     &lt;compilado /&gt;
-  &lt;/lenguaje&gt;
-  &lt;lenguaje&gt;
+  &lt;/linguaxe&gt;
+  &lt;linguaxe&gt;
     &lt;nombre&gt;Python&lt;/nombre&gt;
     &lt;creador&gt;Guido van Rossum&lt;/creador&gt;
     &lt;fecha&gt;1991&lt;/fecha&gt;
     &lt;interpretado /&gt;
-  &lt;/lenguaje&gt;
-  &lt;lenguaje&gt;
+  &lt;/linguaxe&gt;
+  &lt;linguaxe&gt;
     &lt;nombre&gt;PHP&lt;/nombre&gt;
     &lt;creador&gt;Rasmus Lerdorf&lt;/creador&gt;
     &lt;fecha&gt;1995&lt;/fecha&gt;
     &lt;interpretado /&gt;
-  &lt;/lenguaje&gt;
-  &lt;lenguaje&gt;
+  &lt;/linguaxe&gt;
+  &lt;linguaxe&gt;
     &lt;nombre&gt;XSLT&lt;/nombre&gt;
     &lt;creador&gt;James Clark&lt;/creador&gt;
     &lt;fecha&gt;1998&lt;/fecha&gt;
     &lt;interpretado /&gt;
-  &lt;/lenguaje&gt;
-&lt;/lenguajes&gt;</code>
+  &lt;/linguaxe&gt;
+&lt;/linguaxes&gt;</code>
 </pre>
     </div>
 
     <ol>
-      <li>Nombres de los lenguajes
+      <li>Nombres dos linguaxes
         <div class="resultado-xslt">
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
-&lt;lenguajes&gt;
-  &lt;lenguaje&gt;C&lt;/lenguaje&gt;
-  &lt;lenguaje&gt;Python&lt;/lenguaje&gt;
-  &lt;lenguaje&gt;PHP&lt;/lenguaje&gt;
-  &lt;lenguaje&gt;XSLT&lt;/lenguaje&gt;
-&lt;/lenguajes&gt;</code>
+&lt;linguaxes&gt;
+  &lt;linguaxe&gt;C&lt;/linguaxe&gt;
+  &lt;linguaxe&gt;Python&lt;/linguaxe&gt;
+  &lt;linguaxe&gt;PHP&lt;/linguaxe&gt;
+  &lt;linguaxe&gt;XSLT&lt;/linguaxe&gt;
+&lt;/linguaxes&gt;</code>
 </pre>
         </div>
       </li>
 
-      <li>Explicación de los lenguajes en forma de página web:
+      <li>Explicación dos linguaxes en forma de páxina web:
         <div class="resultado-xslt">
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;html&gt;
-  &lt;h1&gt;Lenguajes de programación&lt;/h1&gt;
-  &lt;p&gt;El lenguaje C fue creado por Dennis Ritchie en 1973.&lt;/p&gt;
-  &lt;p&gt;El lenguaje Python fue creado por Guido van Rossum en 1991.&lt;/p&gt;
-  &lt;p&gt;El lenguaje PHP fue creado por Rasmus Lerdorf en 1995.&lt;/p&gt;
-  &lt;p&gt;El lenguaje XSLT fue creado por James Clark en 1998.&lt;/p&gt;
+  &lt;h1&gt;Linguaxes de programación&lt;/h1&gt;
+  &lt;p&gt;O linguaxe C fue creado por Dennis Ritchie en 1973.&lt;/p&gt;
+  &lt;p&gt;O linguaxe Python fue creado por Guido van Rossum en 1991.&lt;/p&gt;
+  &lt;p&gt;O linguaxe PHP fue creado por Rasmus Lerdorf en 1995.&lt;/p&gt;
+  &lt;p&gt;O linguaxe XSLT fue creado por James Clark en 1998.&lt;/p&gt;
 &lt;/html&gt;</code>
 </pre>
         </div>
       </li>
 
-      <li>Tabla de lenguajes y creadores
+      <li>Tabla de linguaxes e creadores
         <div class="resultado-xslt">
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;html&gt;
 &lt;table border="1"&gt;
   &lt;tr&gt;
-    &lt;th&gt;Lenguaje&lt;/th&gt;
+    &lt;th&gt;Linguaxe&lt;/th&gt;
     &lt;th&gt;Creador&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
@@ -269,7 +269,7 @@
           <table class="tabla-con-borde">
             <tbody>
               <tr>
-                <th>Lenguaje</th>
+                <th>Linguaxe</th>
                 <th>Creador</th>
               </tr>
               <tr>
@@ -293,16 +293,16 @@
         </div>
       </li>
 
-      <li>Otra explicación de los lenguajes en forma de página web:
+      <li>Otra explicación dos linguaxes en forma de páxina web:
         <div class="resultado-xslt">
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;html&gt;
-  &lt;p&gt;El lenguaje C es compilado.&lt;/p&gt;
-  &lt;p&gt;El lenguaje Python es interpretado.&lt;/p&gt;
-  &lt;p&gt;El lenguaje PHP es interpretado.&lt;/p&gt;
-  &lt;p&gt;El lenguaje XSLT es interpretado.&lt;/p&gt;
-  &lt;p&gt;Información obtenida de http://www.wikipedia.org en el año 2012&lt;/p&gt;
+  &lt;p&gt;O linguaxe C es compilado.&lt;/p&gt;
+  &lt;p&gt;O linguaxe Python es interpretado.&lt;/p&gt;
+  &lt;p&gt;O linguaxe PHP es interpretado.&lt;/p&gt;
+  &lt;p&gt;O linguaxe XSLT es interpretado.&lt;/p&gt;
+  &lt;p&gt;Información obtenida de http://www.wikipedia.org no ano 2012&lt;/p&gt;
 &lt;/html&gt;</code>
 </pre>
         </div>
@@ -311,12 +311,12 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 8 de mayo de 2012</p>
+    <p class="ultmod">Última modificación de esta páxina: 8 de maio de 2012</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Examen 04/09/12. Exámenes. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Exame 04/09/12. Exámenes. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../../varios/favicon.svg" />
@@ -11,17 +11,17 @@
 </head>
 
 <body>
-  <h1>Examen 4 de septiembre de 2012</h1>
+  <h1>Exame 4 de setembro de 2012</h1>
 
   <nav>
     <p>
       <a href="../../index.html"><img src="../../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
       <a href="../examenes.html"><img src="../../varios/iconos/icono-school.svg" alt="Exámenes" title="Exámenes" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
-      <h2>Examen 04/09/12</h2>
+      <h2>Exame 04/09/12</h2>
 
       <ol>
         <li><a href="#ejercicio-1">WFD</a></li>
@@ -31,12 +31,12 @@
     </div>
   </nav>
 
-  <p>Resuelva los siguientes ejercicios guardando las respuestas en una carpeta con su nombre y apellidos.</p>
+  <p>Resuelva os seguintes exercicios guardando as respostas en unha carpeta con su nombre e apellidos.</p>
 
   <section id="ejercicio-1">
-    <h2>Ejercicio 1. Documentos bien formados</h2>
+    <h2>Exercicio 1. Documentos ben formados</h2>
 
-    <p>El siguiente documento no está bien formado porque contiene errores. Corrija los errores (si para corregir algún error hay que inventarse una etiqueta o atributo, utilice un nombre que tenga relación con la información contenida en el documento, pero <strong>no</strong> elimine etiquetas).</p>
+    <p>O seguinte documento no está ben formado porque contiene errores. Corrija os errores (si para corregir algún error hay que inventarse unha etiqueta o atributo, utilice un nombre que tenga relación con a información contida no documento, pero <strong>no</strong> elimine etiquetas).</p>
 
     <div class="codigo">
       <pre>
@@ -52,9 +52,9 @@
   </section>
 
   <section id="ejercicio-2">
-    <h2>Ejercicio 2. XPath</h2>
+    <h2>Exercicio 2. XPath</h2>
 
-    <p>Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan <strong>exactamente</strong> la respuesta indicadas en los cuadros. Escriba todas las expresiones XPath en un único fichero XPath.txt, numerando las respuestas.</p>
+    <p>Dado o seguinte documento XML, escriba as expresións XPath que devolvan <strong>exactamente</strong> a resposta indicadas en os cuadros. Escriba todas as expresións XPath nun único fichero XPath.txt, numerando as respostas.</p>
 
     <div class="codigo">
       <pre>
@@ -63,7 +63,7 @@
   &lt;jugadores&gt;
     &lt;jugador nombre="David Villa" nacido="1981" /&gt;
     &lt;jugador nombre="Javier Farinós" nacido="1978" /&gt;
-    &lt;jugador nombre="Asier del Horno" nacido="1981" /&gt;
+    &lt;jugador nombre="Asier do Horno" nacido="1981" /&gt;
     &lt;jugador nombre="Jordi Alba" nacido="1989" /&gt;
   &lt;/jugadores&gt;
   &lt;equipos&gt;
@@ -86,12 +86,12 @@
     &lt;/plantilla&gt;
     &lt;plantilla temporada="2009-2010" equipo="Valencia F.C."&gt;
       &lt;jugador&gt;David Villa&lt;/jugador&gt;
-      &lt;jugador&gt;Asier del Horno&lt;/jugador&gt;
+      &lt;jugador&gt;Asier do Horno&lt;/jugador&gt;
       &lt;jugador&gt;Jordi Alba&lt;/jugador&gt;
    &lt;/plantilla&gt;
     &lt;plantilla temporada="2011-12" equipo="Levante U.D."&gt;
       &lt;jugador&gt;Javier Farinós&lt;/jugador&gt;
-      &lt;jugador&gt;Asier del Horno&lt;/jugador&gt;
+      &lt;jugador&gt;Asier do Horno&lt;/jugador&gt;
     &lt;/plantilla&gt;
     &lt;plantilla temporada="2012-13" equipo="F.C. Barcelona"&gt;
       &lt;jugador&gt;David Villa&lt;/jugador&gt;
@@ -103,18 +103,18 @@
     </div>
 
     <ol>
-      <li>Nombres de los jugadores:
+      <li>Nombres dos jugadores:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml"> <span class="xml-attr">nombre</span>="David Villa"
  <span class="xml-attr">nombre</span>="Javier Farinós"
- <span class="xml-attr">nombre</span>="Asier del Horno"
+ <span class="xml-attr">nombre</span>="Asier do Horno"
  <span class="xml-attr">nombre</span>="Jordi Alba"</code>
 </pre>
         </div>
       </li>
 
-      <li>Nombres de los equipos de fútbol:
+      <li>Nombres dos equipos de fútbol:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">Valencia F.C
@@ -124,7 +124,7 @@ F.C. Barcelona</code>
         </div>
       </li>
 
-      <li>Nombres de los equipos de la ciudad de Valencia:
+      <li>Nombres dos equipos da ciudad de Valencia:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">Valencia F.C
@@ -133,17 +133,17 @@ Levante U.D.</code>
         </div>
       </li>
 
-      <li>Nombres de los jugadores nacidos antes de 1985:
+      <li>Nombres dos jugadores nacidos antes de 1985:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml"> <span class="xml-attr">nombre</span>="David Villa"
  <span class="xml-attr">nombre</span>="Javier Farinós"
- <span class="xml-attr">nombre</span>="Asier del Horno"</code>
+ <span class="xml-attr">nombre</span>="Asier do Horno"</code>
  </pre>
         </div>
       </li>
 
-      <li>Equipos en los que ha jugado David Villa:
+      <li>Equipos en os que ha jugado David Villa:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml"> <span class="xml-attr">equipo</span>="Valencia F.C."
@@ -152,7 +152,7 @@ Levante U.D.</code>
         </div>
       </li>
 
-      <li>Fecha de nacimiento de los jugadores del Barcelona:
+      <li>Fecha de nacimiento dos jugadores do Barcelona:
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml"> <span class="xml-attr">nacido</span>="1981"
@@ -164,9 +164,9 @@ Levante U.D.</code>
   </section>
 
   <section id="ejercicio-3">
-    <h2>Ejercicio 3. XSLT</h2>
+    <h2>Exercicio 3. XSLT</h2>
 
-    <p>Dado el siguiente documento XML, escriba y enlace las hojas de estilo XSLT que devuelvan la respuesta deseada (una para cada caso).</p>
+    <p>Dado o seguinte documento XML, escriba e enlace as follas de estilo XSLT que devolvan a resposta desexada (una para cada caso).</p>
 
     <div class="codigo">
       <pre>
@@ -179,7 +179,7 @@ Levante U.D.</code>
     &lt;actor&gt;Dominic West&lt;/actor&gt;
     &lt;inicio&gt;2002&lt;/inicio&gt;
     &lt;final&gt;2008&lt;/final&gt;
-    &lt;genero&gt;policíaco&lt;/genero&gt;
+    &lt;gxaneiro&gt;policíaco&lt;/gxaneiro&gt;
   &lt;/serie&gt;
   &lt;serie&gt;
     &lt;nombre&gt;House&lt;/nombre&gt;
@@ -188,7 +188,7 @@ Levante U.D.</code>
     &lt;actor&gt;Hugh Laurie&lt;/actor&gt;
     &lt;inicio&gt;2004&lt;/inicio&gt;
     &lt;final&gt;2012&lt;/final&gt;
-    &lt;genero&gt;médico&lt;/genero&gt;
+    &lt;gxaneiro&gt;médico&lt;/gxaneiro&gt;
   &lt;/serie&gt;
   &lt;serie&gt;
     &lt;nombre&gt;SuperAgente 86&lt;/nombre&gt;
@@ -197,7 +197,7 @@ Levante U.D.</code>
     &lt;actor&gt;Don Adams&lt;/actor&gt;
     &lt;inicio&gt;1965&lt;/inicio&gt;
     &lt;final&gt;1970&lt;/final&gt;
-    &lt;genero&gt;comedia&lt;/genero&gt;
+    &lt;gxaneiro&gt;comedia&lt;/gxaneiro&gt;
   &lt;/serie&gt;
 &lt;/series_de_television&gt;</code>
 </pre>
@@ -218,7 +218,7 @@ Levante U.D.</code>
         </div>
       </li>
 
-      <li>Cambiar la estructura del documento:
+      <li>Cambiar a estrutura do documento:
         <div class="resultado-xslt">
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
@@ -234,12 +234,12 @@ Levante U.D.</code>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 4 de septiembre de 2012</p>
+    <p class="ultmod">Última modificación de esta páxina: 4 de setembro de 2012</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

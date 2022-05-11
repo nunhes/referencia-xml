@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Ejercicios (1). XSLT. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Exercicios (1). XSLT. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.svg" />
@@ -11,31 +11,31 @@
 </head>
 
 <body>
-  <h1>XSLT - Ejercicios (1)</h1>
+  <h1>XSLT - Exercicios (1)</h1>
 
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
-      <h2>XSLT - Ejercicios (1)</h2>
+      <h2>XSLT - Exercicios (1)</h2>
 
       <h3>Enunciados</h3>
       <ol>
-        <li><a href="#ejercicio-1">Ejercicio 1</a><br />
+        <li><a href="#ejercicio-1">Exercicio 1</a><br />
           <a href="#ejercicio-1-1">1</a> -
           <a href="#ejercicio-1-2">2</a> -
           <a href="#ejercicio-1-3">3</a> -
           <a href="#ejercicio-1-4">4</a>
         </li>
-        <li><a href="#ejercicio-2">Ejercicio 2</a><br />
+        <li><a href="#ejercicio-2">Exercicio 2</a><br />
           <a href="#ejercicio-2-1">1</a> -
           <a href="#ejercicio-2-2">2</a> -
           <a href="#ejercicio-2-3">3</a>
         </li>
-        <li><a href="#ejercicio-3">Ejercicio 3</a><br />
+        <li><a href="#ejercicio-3">Exercicio 3</a><br />
           <a href="#ejercicio-3-1">1</a> -
           <a href="#ejercicio-3-2">2</a> -
           <a href="#ejercicio-3-3">3</a>
@@ -44,18 +44,18 @@
 
       <h3><a href="xslt-1-soluciones.html">Soluciones</a></h3>
       <ol>
-        <li><a href="xslt-1-soluciones.html#ejercicio-1">Ejercicio 1</a><br />
+        <li><a href="xslt-1-soluciones.html#ejercicio-1">Exercicio 1</a><br />
           <a href="xslt-1-soluciones.html#ejercicio-1-1">1</a> -
           <a href="xslt-1-soluciones.html#ejercicio-1-2">2</a> -
           <a href="xslt-1-soluciones.html#ejercicio-1-3">3</a> -
           <a href="xslt-1-soluciones.html#ejercicio-1-4">4</a>
         </li>
-        <li><a href="xslt-1-soluciones.html#ejercicio-2">Ejercicio 2</a><br />
+        <li><a href="xslt-1-soluciones.html#ejercicio-2">Exercicio 2</a><br />
           <a href="xslt-1-soluciones.html#ejercicio-2-1">1</a> -
           <a href="xslt-1-soluciones.html#ejercicio-2-2">2</a> -
           <a href="xslt-1-soluciones.html#ejercicio-2-3">3</a>
         </li>
-        <li><a href="xslt-1-soluciones.html#ejercicio-3">Ejercicio 3</a><br />
+        <li><a href="xslt-1-soluciones.html#ejercicio-3">Exercicio 3</a><br />
           <a href="xslt-1-soluciones.html#ejercicio-3-1">1</a> -
           <a href="xslt-1-soluciones.html#ejercicio-3-2">2</a> -
           <a href="xslt-1-soluciones.html#ejercicio-3-3">3</a>
@@ -64,16 +64,16 @@
     </div>
   </nav>
 
-  <p>Estos ejercicios corresponden a lo explicado en la lección <a href="../lecciones/xml-xslt.html">hojas de estilo XSLT</a>.</p>
+  <p>Estos exercicios corresponden a lo explicado na sección <a href="../lecciones/xml-xslt.html">hojas de estilo XSLT</a>.</p>
 
-  <p>En cada ejercicio, a partir de un documento XML, se trata de obtener diferentes documentos XML escribiendo diferentes hojas de estilo XSLT. Se aconseja crear una copia del documento XML en cada apartado y que cada copia incluya el enlace a una hoja de estilo XSLT diferente.</p>
+  <p>En cada exercicio, a partir dun documento XML, se trata de obtener diferentes documentos XML escribiendo diferentes follas de estilo XSLT. Se aconseja crear unha copia do documento XML en cada apartado e que cada copia incluya o enlace a unha folla de estilo XSLT diferente.</p>
 
-  <p>Se pueden consultar unas posibles <a href="xslt-1-soluciones.html">soluciones de estos ejercicios</a>.</p>
+  <p>Se pueden consultar unhas posibles <a href="xslt-1-soluciones.html">solucións de estos exercicios</a>.</p>
 
   <section id="ejercicio-1">
-    <h2>XSLT (1) - Ejercicio 1</h2>
+    <h2>XSLT (1) - Exercicio 1</h2>
 
-    <p>Dado el siguiente documento XML, escriba las hojas de estilo XSLT que devuelvan la respuesta deseada.</p>
+    <p>Dado o seguinte documento XML, escriba as follas de estilo XSLT que devolvan a resposta desexada.</p>
 
     <div class="codigo">
       <pre>
@@ -83,27 +83,27 @@
     &lt;ciclo id="ASIR"&gt;
       &lt;nombre&gt;Administración de Sistemas Informáticos en Red&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2009" /&gt;
+      &lt;decretoTitulo ano="2009" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="DAW"&gt;
-      &lt;nombre&gt;Desarrollo de Aplicaciones Web&lt;/nombre&gt;
+      &lt;nombre&gt;Desarrollo de Aplicacións Web&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2010" /&gt;
+      &lt;decretoTitulo ano="2010" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="SMR"&gt;
-      &lt;nombre&gt;Sistemas Microinformáticos y Redes&lt;/nombre&gt;
+      &lt;nombre&gt;Sistemas Microinformáticos e Redes&lt;/nombre&gt;
       &lt;grado&gt;Medio&lt;/grado&gt;
-      &lt;decretoTitulo año="2008" /&gt;
+      &lt;decretoTitulo ano="2008" /&gt;
     &lt;/ciclo&gt;
   &lt;/ciclos&gt;
 &lt;/ies&gt;</code>
 </pre>
     </div>
 
-    <p><strong>Nota</strong>: No es importante si en el resultado se generan líneas en blanco a lo largo del documento.</p>
+    <p><strong>Nota</strong>: No es importante si no resultado se generan líneas en blanco a lo largo do documento.</p>
 
     <section id="ejercicio-1-1">
-      <h3>XSLT (1) - Ejercicio 1-1</h3>
+      <h3>XSLT (1) - Exercicio 1-1</h3>
 
       <p>Sin etiquetas:</p>
 
@@ -111,14 +111,14 @@
         <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
     Administración de Sistemas Informáticos en Red
-    Desarrollo de Aplicaciones Web
-    Sistemas Microinformáticos y Redes</code>
+    desenvolvementode Aplicacións Web
+    Sistemas Microinformáticos e Redes</code>
 </pre>
       </div>
     </section>
 
     <section id="ejercicio-1-2">
-      <h3>XSLT (1) - Ejercicio 1-2</h3>
+      <h3>XSLT (1) - Exercicio 1-2</h3>
 
       <p>Párrafos:</p>
 
@@ -127,15 +127,15 @@
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;html&gt;
   &lt;p&gt;Administración de Sistemas Informáticos en Red&lt;/p&gt;
-  &lt;p&gt;Desarrollo de Aplicaciones Web&lt;/p&gt;
-  &lt;p&gt;Sistemas Microinformáticos y Redes&lt;/p&gt;
+  &lt;p&gt;Desarrollo de Aplicacións Web&lt;/p&gt;
+  &lt;p&gt;Sistemas Microinformáticos e Redes&lt;/p&gt;
 &lt;/html&gt;</code>
 </pre>
       </div>
     </section>
 
     <section id="ejercicio-1-3">
-      <h3>XSLT (1) - Ejercicio 1-3</h3>
+      <h3>XSLT (1) - Exercicio 1-3</h3>
 
       <p>Lista:</p>
 
@@ -145,8 +145,8 @@
 &lt;html&gt;
   &lt;ul&gt;
     &lt;li&gt;Administración de Sistemas Informáticos en Red&lt;/li&gt;
-    &lt;li&gt;Desarrollo de Aplicaciones Web&lt;/li&gt;
-    &lt;li&gt;Sistemas Microinformáticos y Redes&lt;/li&gt;
+    &lt;li&gt;Desarrollo de Aplicacións Web&lt;/li&gt;
+    &lt;li&gt;Sistemas Microinformáticos e Redes&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/html&gt;</code>
 </pre>
@@ -154,7 +154,7 @@
     </section>
 
     <section id="ejercicio-1-4">
-      <h3>XSLT (1) - Ejercicio 1-4</h3>
+      <h3>XSLT (1) - Exercicio 1-4</h3>
 
       <p>Tabla:</p>
 
@@ -167,10 +167,10 @@
       &lt;td&gt;Administración de Sistemas Informáticos en Red&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Desarrollo de Aplicaciones Web&lt;/td&gt;
+      &lt;td&gt;Desarrollo de Aplicacións Web&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Sistemas Microinformáticos y Redes&lt;/td&gt;
+      &lt;td&gt;Sistemas Microinformáticos e Redes&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/html&gt;</code>
@@ -180,9 +180,9 @@
   </section>
 
   <section id="ejercicio-2">
-    <h2>XSLT (1) - Ejercicio 2</h2>
+    <h2>XSLT (1) - Exercicio 2</h2>
 
-    <p>Dado el siguiente documento XML, escriba las hojas de estilo XSLT que devuelvan la respuesta deseada.</p>
+    <p>Dado o seguinte documento XML, escriba as follas de estilo XSLT que devolvan a resposta desexada.</p>
 
     <div class="codigo">
       <pre>
@@ -192,17 +192,17 @@
     &lt;ciclo id="ASIR"&gt;
       &lt;nombre&gt;Administración de Sistemas Informáticos en Red&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2009" /&gt;
+      &lt;decretoTitulo ano="2009" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="DAW"&gt;
-      &lt;nombre&gt;Desarrollo de Aplicaciones Web&lt;/nombre&gt;
+      &lt;nombre&gt;Desarrollo de Aplicacións Web&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2010" /&gt;
+      &lt;decretoTitulo ano="2010" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="SMR"&gt;
-      &lt;nombre&gt;Sistemas Microinformáticos y Redes&lt;/nombre&gt;
+      &lt;nombre&gt;Sistemas Microinformáticos e Redes&lt;/nombre&gt;
       &lt;grado&gt;Medio&lt;/grado&gt;
-      &lt;decretoTitulo año="2008" /&gt;
+      &lt;decretoTitulo ano="2008" /&gt;
     &lt;/ciclo&gt;
   &lt;/ciclos&gt;
 &lt;/ies&gt;</code>
@@ -210,7 +210,7 @@
     </div>
 
     <section id="ejercicio-2-1">
-      <h3>XSLT (1) - Ejercicio 2-1</h3>
+      <h3>XSLT (1) - Exercicio 2-1</h3>
 
       <p>Párrafos:</p>
 
@@ -220,15 +220,15 @@
 &lt;html&gt;
   &lt;h1&gt;IES Abastos&lt;/h1&gt;
   &lt;p&gt;Administración de Sistemas Informáticos en Red&lt;/p&gt;
-  &lt;p&gt;Desarrollo de Aplicaciones Web&lt;/p&gt;
-  &lt;p&gt;Sistemas Microinformáticos y Redes&lt;/p&gt;
+  &lt;p&gt;Desarrollo de Aplicacións Web&lt;/p&gt;
+  &lt;p&gt;Sistemas Microinformáticos e Redes&lt;/p&gt;
 &lt;/html&gt;</code>
 </pre>
       </div>
     </section>
 
     <section id="ejercicio-2-2">
-      <h3>XSLT (1) - Ejercicio 2-2</h3>
+      <h3>XSLT (1) - Exercicio 2-2</h3>
 
       <p>Lista:</p>
 
@@ -240,8 +240,8 @@
   &lt;p&gt;Página web: &lt;a href="http://www.iesabastos.org/"&gt;http://www.iesabastos.org/&lt;/a&gt;&lt;/p&gt;
   &lt;ul&gt;
     &lt;li&gt;Administración de Sistemas Informáticos en Red&lt;/li&gt;
-    &lt;li&gt;Desarrollo de Aplicaciones Web&lt;/li&gt;
-    &lt;li&gt;Sistemas Microinformáticos y Redes&lt;/li&gt;
+    &lt;li&gt;Desarrollo de Aplicacións Web&lt;/li&gt;
+    &lt;li&gt;Sistemas Microinformáticos e Redes&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/html&gt;</code>
 </pre>
@@ -249,7 +249,7 @@
     </section>
 
     <section id="ejercicio-2-3">
-      <h3>XSLT (1) - Ejercicio 2-3</h3>
+      <h3>XSLT (1) - Exercicio 2-3</h3>
 
       <p>Tabla:</p>
 
@@ -261,9 +261,9 @@
   &lt;p&gt;Página web: &lt;a href="http://www.iesabastos.org/"&gt;http://www.iesabastos.org/&lt;/a&gt;&lt;/p&gt;
   &lt;table border="1"&gt;
   &lt;tr&gt;
-    &lt;th&gt;Nombre del ciclo&lt;/th&gt;
+    &lt;th&gt;Nombre do ciclo&lt;/th&gt;
     &lt;th&gt;Grado&lt;/th&gt;
-    &lt;th&gt;Año del título&lt;/th&gt;
+    &lt;th&gt;Ano do título&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;Administración de Sistemas Informáticos en Red&lt;/td&gt;
@@ -271,12 +271,12 @@
     &lt;td&gt;2009&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;Desarrollo de Aplicaciones Web&lt;/td&gt;
+    &lt;td&gt;Desarrollo de Aplicacións Web&lt;/td&gt;
     &lt;td&gt;Superior&lt;/td&gt;
     &lt;td&gt;2010&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;Sistemas Microinformáticos y Redes&lt;/td&gt;
+    &lt;td&gt;Sistemas Microinformáticos e Redes&lt;/td&gt;
     &lt;td&gt;Medio&lt;/td&gt;
     &lt;td&gt;2008&lt;/td&gt;
   &lt;/tr&gt;
@@ -288,9 +288,9 @@
   </section>
 
   <section id="ejercicio-3">
-    <h2>XSLT (1) - Ejercicio 3</h2>
+    <h2>XSLT (1) - Exercicio 3</h2>
 
-    <p>Dado el siguiente documento XML, escriba las hojas de estilo XSLT que devuelvan la respuesta deseada.</p>
+    <p>Dado o seguinte documento XML, escriba as follas de estilo XSLT que devolvan a resposta desexada.</p>
 
     <div class="codigo">
       <pre>
@@ -302,17 +302,17 @@
     &lt;ciclo id="ASIR"&gt;
       &lt;nombre&gt;Administración de Sistemas Informáticos en Red&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2009" /&gt;
+      &lt;decretoTitulo ano="2009" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="DAW"&gt;
-      &lt;nombre&gt;Desarrollo de Aplicaciones Web&lt;/nombre&gt;
+      &lt;nombre&gt;Desarrollo de Aplicacións Web&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2010" /&gt;
+      &lt;decretoTitulo ano="2010" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="SMR"&gt;
-      &lt;nombre&gt;Sistemas Microinformáticos y Redes&lt;/nombre&gt;
+      &lt;nombre&gt;Sistemas Microinformáticos e Redes&lt;/nombre&gt;
       &lt;grado&gt;Medio&lt;/grado&gt;
-      &lt;decretoTitulo año="2008" /&gt;
+      &lt;decretoTitulo ano="2008" /&gt;
     &lt;/ciclo&gt;
   &lt;/ciclos&gt;
 &lt;/ies&gt;</code>
@@ -320,7 +320,7 @@
     </div>
 
     <section id="ejercicio-3-1">
-      <h3>XSLT (1) - Ejercicio 3-1</h3>
+      <h3>XSLT (1) - Exercicio 3-1</h3>
 
       <p>Párrafos:</p>
 
@@ -330,15 +330,15 @@
 &lt;html&gt;
   &lt;h1&gt;IES Abastos&lt;/h1&gt;
   &lt;p&gt;Administración de Sistemas Informáticos en Red&lt;/p&gt;
-  &lt;p&gt;Desarrollo de Aplicaciones Web&lt;/p&gt;
-  &lt;p&gt;Sistemas Microinformáticos y Redes&lt;/p&gt;
+  &lt;p&gt;Desarrollo de Aplicacións Web&lt;/p&gt;
+  &lt;p&gt;Sistemas Microinformáticos e Redes&lt;/p&gt;
 &lt;/html&gt;</code>
 </pre>
       </div>
     </section>
 
     <section id="ejercicio-3-2">
-      <h3>XSLT (1) - Ejercicio 3-2</h3>
+      <h3>XSLT (1) - Exercicio 3-2</h3>
 
       <p>Lista:</p>
 
@@ -346,11 +346,11 @@
         <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;html&gt;
- &lt;h1&gt;Ciclos formativos del IES Abastos&lt;/h1&gt;
+ &lt;h1&gt;Ciclos formativos do IES Abastos&lt;/h1&gt;
   &lt;ul&gt;
     &lt;li&gt;ASIR&lt;br/&gt;Administración de Sistemas Informáticos en Red, Ciclo Formativo de Grado Superior creado en 2009&lt;/li&gt;
-    &lt;li&gt;DAW&lt;br/&gt;Desarrollo de Aplicaciones Web, Ciclo Formativo de Grado Superior creado en 2010&lt;/li&gt;
-    &lt;li&gt;SMR&lt;br/&gt;Sistemas Microinformáticos y Redes, Ciclo Formativo de Grado Medio creado en 2008&lt;/li&gt;
+    &lt;li&gt;DAW&lt;br/&gt;Desarrollo de Aplicacións Web, Ciclo Formativo de Grado Superior creado en 2010&lt;/li&gt;
+    &lt;li&gt;SMR&lt;br/&gt;Sistemas Microinformáticos e Redes, Ciclo Formativo de Grado Medio creado en 2008&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/html&gt;</code>
 </pre>
@@ -358,7 +358,7 @@
     </section>
 
     <section id="ejercicio-3-3">
-      <h3>XSLT (1) - Ejercicio 3-3</h3>
+      <h3>XSLT (1) - Exercicio 3-3</h3>
 
       <p>Tabla:</p>
 
@@ -369,9 +369,9 @@
   &lt;h1&gt;IES Abastos&lt;/h1&gt;
   &lt;table border=&quot;1&quot;&gt;
     &lt;tr&gt;
-      &lt;th&gt;Nombre del ciclo&lt;/th&gt;
+      &lt;th&gt;Nombre do ciclo&lt;/th&gt;
       &lt;th&gt;Grado&lt;/th&gt;
-      &lt;th&gt;Año del título&lt;/th&gt;
+      &lt;th&gt;Ano do título&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Administración de Sistemas Informáticos en Red&lt;/td&gt;
@@ -379,12 +379,12 @@
       &lt;td&gt;2009&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Desarrollo de Aplicaciones Web&lt;/td&gt;
+      &lt;td&gt;Desarrollo de Aplicacións Web&lt;/td&gt;
       &lt;td&gt;Superior&lt;/td&gt;
       &lt;td&gt;2010&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Sistemas Microinformáticos y Redes&lt;/td&gt;
+      &lt;td&gt;Sistemas Microinformáticos e Redes&lt;/td&gt;
       &lt;td&gt;Medio&lt;/td&gt;
       &lt;td&gt;2008&lt;/td&gt;
     &lt;/tr&gt;
@@ -396,12 +396,12 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 16 de mayo de 2016</p>
+    <p class="ultmod">Última modificación de esta páxina: 16 de maio de 2016</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

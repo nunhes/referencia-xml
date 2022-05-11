@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Diferencias entre navegadores. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Diferencias entre navegadores. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.svg" />
@@ -16,7 +16,7 @@
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
@@ -37,9 +37,9 @@
       </ul>
     </div>
   </nav>
-  <p>Se comentan en esta página algunas diferencias entre navegadores.</p>
+  <p>Se comentan en esta páxina algunhas diferencias entre navegadores.</p>
 
-  <p>Las capturas de imagen que ilustran las diferencias se han realizado con las últimas versiones disponibles en abril de 2018 (Firefox 59, Google Chrome 66 y Microsoft Edge 16). En versiones posteriores, el comportamiento de los navegadores puede ser diferente.</p>
+  <p>Las capturas de imagen que ilustran as diferencias se han realizado con as últimas versións disponibles en abril de 2018 (Firefox 59, Google Chrome 66 e Microsoft Edge 16). En versións posteriores, o comportamiento dos navegadores puede ser diferente.</p>
 
   <section id="css">
     <h2>CSS en XML</h2>
@@ -47,7 +47,7 @@
     <section id="listas-ordenadas">
       <h3>Listas ordenadas</h3>
 
-      <p>Firefox no aumenta los contadores al mostrar elementos como listas ordenadas, pero Chrome y Microsoft Edge lo hacen correctamente.</p>
+      <p>Firefox no aumenta os contadores al mostrar elementos como listas ordenadas, pero Chrome e Microsoft Edge lo hacen correctamente.</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -96,7 +96,7 @@ elemento {
 </pre>
           </div>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplo-dif-nav-01.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplo-dif-nav-01.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplo-dif-nav-01.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
     </section>
@@ -104,7 +104,7 @@ elemento {
     <section id="class-id">
       <h3>Los atributos <span class="html-atri">class</span> e <span class="html-atri">id</span></h3>
 
-      <p>Cuando un documento XML incluye atributos <span class="html-atri">class</span> e <span class="html-atri">id</span> y la hoja de estilo hace referencia a ellos mediante los selectores almohadilla (#) y punto (.), Firefox y Microsoft Edge aplican ambas reglas, pero  Google Chrome aplica únicamente el selector almohadilla, como muestra el ejemplo siguiente:</p>
+      <p>Cuando un documento XML incluye atributos <span class="html-atri">class</span> e <span class="html-atri">id</span> e a folla de estilo hace referencia a ellos mediante os selectores almohadilla (#) e punto (.), Firefox e Microsoft Edge aplican ambas reglas, pero  Google Chrome aplica únicamente o selector almohadilla, como muestra o ejemplo seguinte:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -127,7 +127,7 @@ elemento {
 &lt;libro&gt;
   &lt;titulo <span class="codigo-resaltado">class="color"</span>&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor <span class="codigo-resaltado">id="grande"</span>&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
         </div>
@@ -142,7 +142,7 @@ elemento {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-1.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-1.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-5-1.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
@@ -167,7 +167,7 @@ elemento {
         </div>
       </div>
 
-      <p><strong>Nota</strong>: No sé si está definido en alguna recomendación que es lo que tendrían que hacer los navegadores en este caso.</p>
+      <p><strong>Nota</strong>: No sé si está definido en algunha recomendación que es lo que tendrían que hacer os navegadores en este caso.</p>
     </section>
   </section>
 
@@ -175,13 +175,13 @@ elemento {
     <h2>XSLT</h2>
 
     <section id="enlazar-xslt">
-      <h3>Documentos enlazados con hojas de estilo XSLT</h3>
+      <h3>Documentos enlazados con follas de estilo XSLT</h3>
 
-      <p>Si un documento XML enlaza con una hoja de estilo XSLT, al abrir el documento con Firefox y Microsoft Edge se muestra siempre el documento transformado, mientras que Google Chrome sólo muestra el documento transformado si se ha servido desde un servidor web (http://...). Si el documento se abre directamente como un archivo local (file://...), Google Chrome muestra un página en blanco.</p>
+      <p>Si un documento XML enlaza con unha folla de estilo XSLT, al abrir o documento con Firefox e Microsoft Edge se muestra siempre o documento transformado, mientras que Google Chrome sólo muestra o documento transformado si se ha servido desde un servidor web (http://...). Si o documento se abre directamente como un archivo local (file://...), Google Chrome muestra un páxina en blanco.</p>
 
       <hr class="corta" />
 
-      <p>Si un documento XML enlaza con una hoja de estilo XSLT, al abrir el documento con Firefox y Microsoft Edge se muestra siempre el documento transformado, mientras que Google Chrome sólo lo muestra si el documento resultante está bien formado.</p>
+      <p>Si un documento XML enlaza con unha folla de estilo XSLT, al abrir o documento con Firefox e Microsoft Edge se muestra siempre o documento transformado, mientras que Google Chrome sólo lo muestra si o documento resultante está ben formado.</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -205,17 +205,17 @@ elemento {
     &lt;ciclo id="ASIR"&gt;
       &lt;nombre&gt;Administración de Sistemas Informáticos en Red&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2009" /&gt;
+      &lt;decretoTitulo ano="2009" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="DAW"&gt;
-      &lt;nombre&gt;Desarrollo de Aplicaciones Web&lt;/nombre&gt;
+      &lt;nombre&gt;Desarrollo de Aplicacións Web&lt;/nombre&gt;
       &lt;grado&gt;Superior&lt;/grado&gt;
-      &lt;decretoTitulo año="2010" /&gt;
+      &lt;decretoTitulo ano="2010" /&gt;
     &lt;/ciclo&gt;
     &lt;ciclo id="SMR"&gt;
-      &lt;nombre&gt;Sistemas Microinformáticos y Redes&lt;/nombre&gt;
+      &lt;nombre&gt;Sistemas Microinformáticos e Redes&lt;/nombre&gt;
       &lt;grado&gt;Medio&lt;/grado&gt;
-      &lt;decretoTitulo año="2008" /&gt;
+      &lt;decretoTitulo ano="2008" /&gt;
     &lt;/ciclo&gt;
   &lt;/ciclos&gt;
 &lt;/ies&gt;</code>
@@ -233,7 +233,7 @@ elemento {
 &lt;/xsl:stylesheet&gt;</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/diferencias/xslt_1-1-1.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/diferencias/xslt_1-1-1.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/diferencias/xslt_1-1-1.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
@@ -261,12 +261,12 @@ elemento {
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 19 de abril de 2018</p>
+    <p class="ultmod">Última modificación de esta páxina: 19 de abril de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

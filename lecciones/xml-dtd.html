@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>DTD: Definición de Tipo de Documento. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>DTD: Definición de Tipo de Documento. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.svg" />
@@ -16,19 +16,19 @@
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
       <h2>DTD</h2>
 
       <ul>
-        <li><a href="#ddiv-que-es">Qué es una DTD</a></li>
+        <li><a href="#ddiv-que-es">Qué es unha DTD</a></li>
         <li><a href="#ddiv-referencia">Referencia a DTD en XML</a></li>
-        <li><a href="#ddiv-declaraciones">Declaraciones</a>
+        <li><a href="#ddiv-declaracións">Declaracións</a>
           <ul>
             <li><a href="#ddiv-declaracion-entidades">Entidades</a></li>
-            <li><a href="#ddiv-declaracion-notaciones">Notaciones</a></li>
+            <li><a href="#ddiv-declaracion-notacións">Notacións</a></li>
             <li><a href="#ddiv-declaracion-elementos">Elementos</a></li>
             <li><a href="#ddiv-declaracion-atributos">Atributos</a></li>
           </ul>
@@ -38,54 +38,54 @@
   </nav>
 
   <section id="ddiv-que-es">
-    <h2>Qué es una DTD</h2>
+    <h2>Qué es unha DTD</h2>
 
-    <p>Una DTD es un documento que define la estructura de un documento XML: los elementos, atributos, entidades, notaciones, etc, que pueden aparecer, el orden y el número de veces que pueden aparecer, cuáles pueden ser hijos de cuáles, etc. El procesador XML utiliza la DTD para verificar si un documento es válido, es decir, si el documento cumple las reglas del DTD.</p>
+    <p>Una DTD es un documento que define a estrutura dun documento XML: os elementos, atributos, entidades, notacións, etc, que pueden aparecer, o orden e o número de veces que pueden aparecer, cuáles pueden ser hijos de cuáles, etc. O procesador XML utiliza a DTD para verificar si un documento es válido, es decir, si o documento cumple as regras do DTD.</p>
   </section>
 
   <section id="ddiv-referencia">
-    <h2>Referencia a una DTD en un documento XML</h2>
+    <h2>Referencia a unha DTD nun documento XML</h2>
 
-    <p>La DTD que debe utilizar el procesador XML para validar el documento XML se indica mediante la etiqueta DOCTYPE. La DTD puede estar incluida en el propio documento, ser un documento externo o combinarse ambas.</p>
+    <p>La DTD que debe utilizar o procesador XML para validar o documento XML se indica mediante a etiqueta DOCTYPE. La DTD puede estar incluida no propio documento, ser un documento externo o combinarse ambas.</p>
 
     <ul>
-      <li>La DTD puede incluirse en el propio documento, con la siguiente sintaxis:
+      <li>La DTD puede incluirse no propio documento, con a seguinte sintaxis:
 
         <div class="codigo">
           <pre>
 <code class="language-xml">&lt;!DOCTYPE nombre [
- ... declaraciones ...
+ ... declaracións ...
 ]&gt;</code>
 </pre>
         </div>
       </li>
-      <li>La DTD puede estar en un documento externo y, si sólo va a ser utilizada por una única aplicación, la sintaxis es la siguiente:
+      <li>La DTD puede estar nun documento externo y, si sólo va a ser utilizada por unha única aplicación, a sintaxis es a seguinte:
 
         <div class="codigo">
           <pre><code class="language-xml">&lt;!DOCTYPE nombre SYSTEM "uri"&gt;</code></pre>
         </div>
 
-        <p>Se puede combinar una DTD externa con una DTD interna, con la siguiente sintaxis:</p>
+        <p>Se puede combinar unha DTD externa con unha DTD interna, con a seguinte sintaxis:</p>
 
         <div class="codigo">
           <pre>
 <code class="language-xml">&lt;!DOCTYPE nombre SYSTEM "uri" [
- ... declaraciones ...
+ ... declaracións ...
 ]&gt;</code>
 </pre>
         </div>
       </li>
-      <li>La DTD puede estar en un documento externo y, si va a ser utilizada por varias aplicaciones, la sintaxis es la siguiente:
+      <li>La DTD puede estar nun documento externo y, si va a ser utilizada por varias aplicacións, a sintaxis es a seguinte:
 
         <div class="codigo">
           <pre><code class="language-xml">&lt;!DOCTYPE nombre PUBLIC "fpi" "uri"&gt;</code></pre>
         </div>
-        <p>Se puede combinar una DTD externa con una DTD interna, con la siguiente sintaxis:</p>
+        <p>Se puede combinar unha DTD externa con unha DTD interna, con a seguinte sintaxis:</p>
 
         <div class="codigo">
           <pre>
 <code class="language-xml">&lt;!DOCTYPE nombre PUBLIC "fpi" "uri" [
- ... declaraciones ...
+ ... declaracións ...
 ]&gt;</code>
 </pre>
         </div>
@@ -94,61 +94,61 @@
 
     <p>En todos estos casos:</p>
     <ul>
-      <li>"nombre" es el nombre del tipo de documento XML, que debe coincidir con el nombre del elemento raíz del documento XML.</li>
-      <li>"uri" es el camino (absoluto o relativo) hasta la DTD.</li>
+      <li>"nombre" es o nombre do tipo de documento XML, que debe coincidir con o nombre do elemento raíz do documento XML.</li>
+      <li>"uri" es o camino (absoluto o relativo) hasta a DTD.</li>
       <li>"fpi" es un identificador público formal (Formal Public Identifier).</li>
     </ul>
 
   </section>
 
-  <section id="ddiv-declaraciones">
-    <h2>Declaraciones</h2>
+  <section id="ddiv-declaracións">
+    <h2>Declaracións</h2>
 
-    <p>Las DTDs describen la estructura de los documentos XML mediante declaraciones. Hay cuatro tipos de declaraciones:</p>
+    <p>Las DTDs describen a estrutura dos documentos XML mediante declaracións. Hay cuatro tipos de declaracións:</p>
     <ul>
-      <li><a href="#ddiv-declaracion-entidades">Declaraciones de entidades</a></li>
-      <li><a href="#ddiv-declaracion-notaciones">Declaraciones de notaciones</a></li>
-      <li><a href="#ddiv-declaracion-elementos">Declaraciones de elementos</a>, que indican los elementos permitidos en un documento y su contenido (que puede ser simplemente texto u otros elementos).</li>
-      <li><a href="#ddiv-declaracion-atributos">Declaraciones de atributos</a>, que indican los atributos permitidos en cada elemento y el tipo o valores permitidos de cada elemento.</li>
+      <li><a href="#ddiv-declaracion-entidades">Declaracións de entidades</a></li>
+      <li><a href="#ddiv-declaracion-notacións">Declaracións de notacións</a></li>
+      <li><a href="#ddiv-declaracion-elementos">Declaracións de elementos</a>, que indican os elementos permitidos nun documento e su contenido (que puede ser simplemente texto u outros elementos).</li>
+      <li><a href="#ddiv-declaracion-atributos">Declaracións de atributos</a>, que indican os atributos permitidos en cada elemento e o tipo o valores permitidos de cada elemento.</li>
     </ul>
 
     <section id="ddiv-declaracion-entidades">
       <h3>Declaración de entidades</h3>
 
-      <p>Una entidad consiste en un nombre y su valor (son similares a las constantes en los lenguajes de programación). Con algunas excepciones, el procesador XML sustituye las referencias a entidades por sus valores antes de procesar el documento. Una vez definida la entidad, se puede utilizar en el documento escribiendo una referencia a la entidad, que empieza con el carácter "&amp;", sigue con el nombre de la entidad y termina con ";". (es decir, &amp;nombreEntidad;)</p>
+      <p>Una entidad consiste nun nombre e su valor (son similares a as constantes en os linguaxes de programación). Con algunhas excepciones, o procesador XML sustituye as referencias a entidades por sus valores antes de procesar o documento. unha vez definida a entidad, se puede utilizar no documento escribiendo unha referencia a a entidad, que empieza con o carácter "&amp;", sigue con o nombre da entidad e termina con ";". (es decir, &amp;nombreEntidad;)</p>
 
-      <p>Las entidades pueden ser internas o externas y tanto unas como otras pueden ser generales o paramétricas.</p>
+      <p>Las entidades pueden ser internas o externas e tanto unhas como outras pueden ser xerais o paramétricas.</p>
 
-      <p>Las declaraciones de entidades internas (generales) siguen la siguiente sintaxis:</p>
+      <p>Las declaracións de entidades internas (xerais) siguen a seguinte sintaxis:</p>
 
       <div class="codigo">
         <pre><code class="language-xml">&lt;!ENTITY nombreEntidad "valorEntidad"&gt;</code></pre>
       </div>
 
-      <p>En las declaraciones de entidades externas (generales) se distinguen dos casos:</p>
+      <p>En as declaracións de entidades externas (xerais) se distinguen dos casos:</p>
       <ul>
-        <li>La entidad hace referencia a un fichero de texto y en ese caso la entidad se sustituye por el contenido del archivo.
-          <p>La entidad puede ser una entidad de sistema, con la siguiente sintaxis:</p>
+        <li>La entidad hace referencia a un fichero de texto e en ese caso a entidad se sustituye por o contenido do archivo.
+          <p>La entidad puede ser unha entidad de sistema, con a seguinte sintaxis:</p>
 
           <div class="codigo">
             <pre><code class="language-xml">&lt;!ENTITY nombreEntidad SYSTEM "uri"&gt;</code></pre>
           </div>
 
-          <p>o puede ser una entidad pública, con la siguiente sintaxis:</p>
+          <p>o puede ser unha entidad pública, con a seguinte sintaxis:</p>
 
           <div class="codigo">
             <pre><code class="language-xml">&lt;!ENTITY nombreEntidad PUBLIC "fpi" "uri"&gt;</code></pre>
           </div>
         </li>
-        <li>La entidad hace referencia a un fichero que no es de texto (por ejemplo, una imagen) y en ese caso la entidad no se sustituye por el contenido del archivo.
+        <li>La entidad hace referencia a un fichero que no es de texto (por ejemplo, unha imagen) e en ese caso a entidad no se sustituye por o contenido do archivo.
 
-          <p>La entidad puede ser una entidad de sistema, con la siguiente sintaxis:</p>
+          <p>La entidad puede ser unha entidad de sistema, con a seguinte sintaxis:</p>
 
           <div class="codigo">
             <pre><code class="language-xml">&lt;!ENTITY nombreEntidad SYSTEM "uri" NDATA tipo&gt;</code></pre>
           </div>
 
-          <p>o puede ser una entidad pública, con la siguiente sintaxis:</p>
+          <p>o puede ser unha entidad pública, con a seguinte sintaxis:</p>
 
           <div class="codigo">
             <pre><code class="language-xml">&lt;!ENTITY nombreEntidad PUBLIC "fpi" "uri" NDATA tipo&gt;</code></pre>
@@ -158,14 +158,14 @@
 
       <p>En todos estos casos:</p>
       <ul>
-        <li>"nombreEntidad" es el nombre de la entidad.</li>
-        <li>"valorEntidad" es el valor de la entidad.</li>
-        <li>"uri" es el camino (absoluto o relativo) hasta un archivo.</li>
-        <li>"tipo" es el tipo de archivo (gif, jpg, etc).</li>
+        <li>"nombreEntidad" es o nombre da entidad.</li>
+        <li>"valorEntidad" es o valor da entidad.</li>
+        <li>"uri" es o camino (absoluto o relativo) hasta un archivo.</li>
+        <li>"tipo" es o tipo de archivo (gif, jpg, etc).</li>
         <li>"fpi" es un identificador público formal (Formal Public Identifier).</li>
       </ul>
 
-      <p>Las declaraciones de entidades paramétricas siguen la mismas sintaxis que las generales, pero llevan el carácter "%" antes del nombre de la entidad. Por ejemplo:</p>
+      <p>Las declaracións de entidades paramétricas siguen a mismas sintaxis que as xerais, pero llevan o carácter "%" antes do nombre da entidad. Por ejemplo:</p>
 
       <div class="codigo">
         <pre><code class="language-xml">&lt;!ENTITY % nombreEntidad "valorEntidad"&gt;</code></pre>
@@ -181,30 +181,30 @@
 
       <hr class="corta" />
 
-      <p>La diferencia entre entidades generales y paramétricas es que las entidades paramétricas se sustituyen por su valor en todo el documento (incluso en la propia declaración de tipo de documento) mientras que las generales no se sustituyen en la declaración de tipo de documento.</p>
+      <p>La diferencia entre entidades xerais e paramétricas es que as entidades paramétricas se sustituyen por su valor en todo o documento (incluso na propia declaración de tipo de documento) mientras que as xerais no se sustituyen na declaración de tipo de documento.</p>
 
     </section>
 
-    <section id="ddiv-declaracion-notaciones">
-      <h3>Declaración de notaciones</h3>
+    <section id="ddiv-declaracion-notacións">
+      <h3>Declaración de notacións</h3>
 
-      <p>Las notaciones se usan en XML para definir las entidades externas que no va a analizar el procesador XML (aunque sí lo hará la aplicación que trate un documento). Para hacer referencia estas entidades no se utiliza la notación habitual (&amp;nombreEntidad;), sino que se utiliza el nombre de la entidad directamente.</p>
+      <p>Las notacións se usan en XML para definir as entidades externas que no va a analizar o procesador XML (aunque sí lo hará a aplicación que trate un documento). Para hacer referencia estas entidades no se utiliza a notación habitual (&amp;nombreEntidad;), sino que se utiliza o nombre da entidad directamente.</p>
     </section>
 
     <section id="ddiv-declaracion-elementos">
       <h3>Declaración de elementos</h3>
 
-      <p>Las declaraciones de los elementos siguen la siguiente sintaxis:</p>
+      <p>Las declaracións dos elementos siguen a seguinte sintaxis:</p>
 
       <div class="codigo">
         <pre><code class="language-xml">&lt;!ELEMENT nombreElemento (contenido)&gt;</code></pre>
       </div>
 
-      <p>en la que "nombreElemento" es el nombre del elemento, y "(contenido)" una expresión que describe el contenido del elemento.</p>
+      <p>en a que "nombreElemento" es o nombre do elemento, e "(contenido)" unha expresión que describe o contenido do elemento.</p>
 
-      <p>Para definir el contenido del elemento se pueden utilizar los términos EMPTY, (#PCDATA) o ANY o escribir expresiones más complejas:</p>
+      <p>Para definir o contenido do elemento se pueden utilizar os términos EMPTY, (#PCDATA) o ANY o escribir expresións máis complejas:</p>
       <ul>
-        <li><strong>EMPTY</strong>: significa que el elemento es vacío, es decir, que no puede tener contenido. Los elementos vacíos pueden escribirse con etiquetas de apertura y cierre sin nada entre ellos, ni siquiera espacios, o con una etiqueta vacía. EMPTY debe escribirse sin paréntesis.
+        <li><strong>EMPTY</strong>: significa que o elemento es vacío, es decir, que no puede tener contenido. Los elementos vacíos pueden escribirse con etiquetas de apertura e cierre sin nada entre ellos, ni siquiera espacios, o con unha etiqueta vacía. EMPTY debe escribirse sin paréntesis.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -249,7 +249,7 @@
             </div>
           </div>
         </li>
-        <li><strong>(#PCDATA)</strong>: significa que el elemento puede contener texto. #PCDATA debe escribirse entre paréntesis.
+        <li><strong>(#PCDATA)</strong>: significa que o elemento puede contener texto. #PCDATA debe escribirse entre paréntesis.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -283,7 +283,7 @@
             </div>
           </div>
         </li>
-        <li><strong>ANY</strong>: significa que el elemento puede contener cualquier cosa (texto y otros elementos). ANY debe escribirse sin paréntesis.
+        <li><strong>ANY</strong>: significa que o elemento puede contener calquera cosa (texto e outros elementos). ANY debe escribirse sin paréntesis.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -320,9 +320,9 @@
         </li>
       </ul>
 
-      <p>Para indicar que un elemento puede o debe contener otros elementos se deben indicar los elementos, utilizando los conectores y modificadores siguientes:</p>
+      <p>Para indicar que un elemento puede o debe contener outros elementos se deben indicar os elementos, utilizando os conectores e modificadores seguintes:</p>
       <ul>
-        <li><strong>, (coma)</strong>: significa que el elemento contiene los elementos en el orden indicado.
+        <li><strong>, (coma)</strong>: significa que o elemento contiene os elementos no orden indicado.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -354,18 +354,18 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;a /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta el elemento &lt;b /&gt; --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;a /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta o elemento &lt;b /&gt; --&gt;</span></code></pre>
             </div>
           </div>
 
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;a /&gt;&lt;/ejemplo&gt;                             <span class="codigo-resaltado">&lt;!-- ERROR: el orden no es correcto --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;a /&gt;&lt;/ejemplo&gt;                             <span class="codigo-resaltado">&lt;!-- ERROR: o orden no es correcto --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>| (o lógico)</strong>: significa que el elemento contiene uno de los dos elementos.
+        <li><strong>| (o lóxico)</strong>: significa que o elemento contiene uno dos dos elementos.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -397,7 +397,7 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;a /&gt;&lt;b /&gt;&lt;/ejemplo&gt;                              <span class="codigo-resaltado">&lt;!-- ERROR: están los dos elementos --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;a /&gt;&lt;b /&gt;&lt;/ejemplo&gt;                              <span class="codigo-resaltado">&lt;!-- ERROR: están os dos elementos --&gt;</span></code></pre>
             </div>
           </div>
 
@@ -408,7 +408,7 @@
             </div>
           </div>
         </li>
-        <li><strong>?</strong>: significa que el elemento puede aparecer o no, pero sólo una vez.
+        <li><strong>?</strong>: significa que o elemento puede aparecer o no, pero sólo unha vez.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -440,18 +440,18 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta el elemento &lt;a /&gt; --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta o elemento &lt;a /&gt; --&gt;</span></code></pre>
             </div>
           </div>
 
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;b /&gt;&lt;/ejemplo&gt;                             <span class="codigo-resaltado">&lt;!-- ERROR: el elemento &lt;b /&gt; aparece dos veces --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;b /&gt;&lt;/ejemplo&gt;                             <span class="codigo-resaltado">&lt;!-- ERROR: o elemento &lt;b /&gt; aparece dos veces --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>*</strong>: significa que el elemento puede no aparecer o aparecer una o más veces.
+        <li><strong>*</strong>: significa que o elemento puede no aparecer o aparecer unha o máis veces.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -490,11 +490,11 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;a /&gt;&lt;/ejemplo&gt;                             <span class="codigo-resaltado">&lt;!-- ERROR: el elemento &lt;a /&gt; aparece después de &lt;b /&gt; --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;a /&gt;&lt;/ejemplo&gt;                             <span class="codigo-resaltado">&lt;!-- ERROR: o elemento &lt;a /&gt; aparece despois de &lt;b /&gt; --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>+</strong>: significa que el elemento tiene que aparecer una o más veces (no puede no aparecer).
+        <li><strong>+</strong>: significa que o elemento tiene que aparecer unha o máis veces (no puede no aparecer).
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -526,7 +526,7 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta el elemento &lt;a /&gt; --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;b /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta o elemento &lt;a /&gt; --&gt;</span></code></pre>
             </div>
           </div>
         </li>
@@ -562,7 +562,7 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;a /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta el elemento &lt;a /&gt; o &lt;b /&gt; --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo&gt;&lt;a /&gt;&lt;/ejemplo&gt;                                  <span class="codigo-resaltado">&lt;!-- ERROR: falta o elemento &lt;a /&gt; o &lt;b /&gt; --&gt;</span></code></pre>
             </div>
           </div>
 
@@ -607,21 +607,21 @@
     <section id="ddiv-declaracion-atributos">
       <h3>Declaración de atributos</h3>
 
-      <p>Una declaración de atributos sigue la siguiente sintaxis:</p>
+      <p>Una declaración de atributos sigue a seguinte sintaxis:</p>
 
       <div class="codigo">
         <pre><code class="language-xml">&lt;!ATTLIST nombreElemento nombreAtributo tipoAtributo valorInicialAtributo &gt;</code></pre>
       </div>
 
-      <p>en la que:</p>
+      <p>en a que:</p>
       <ul>
-        <li>"nombreElemento" es el nombre del elemento para el que se define un atributo.</li>
-        <li>"nombreAtributo" es el nombre del atributo.</li>
-        <li>"tipoAtributo" es el tipo de datos.</li>
-        <li>"valorInicialAtributo" es el valor predeterminado del atributo (aunque también puede indicar otras cosas).</li>
+        <li>"nombreElemento" es o nombre do elemento para o que se define un atributo.</li>
+        <li>"nombreAtributo" es o nombre do atributo.</li>
+        <li>"tipoAtributo" es o tipo de datos.</li>
+        <li>"valorInicialAtributo" es o valor predeterminado do atributo (aunque tamén puede indicar outras cosas).</li>
       </ul>
 
-      <p>Para definir varios atributos de un mismo elemento, se puede utilizar una o varias declaraciones de atributos. Los siguientes ejemplos son equivalentes:</p>
+      <p>Para definir varios atributos dun mismo elemento, se puede utilizar unha o varias declaracións de atributos. Los seguintes ejemplos son equivalentes:</p>
 
       <div class="codigo">
         <pre>
@@ -641,9 +641,9 @@
 
       <hr class="corta" />
 
-      <p>Los tipos de atributos son los siguientes:</p>
+      <p>Los tipos de atributos son os seguintes:</p>
       <ul>
-        <li><strong>CDATA</strong>: el atributo contiene caracteres (sin restricciones).
+        <li><strong>CDATA</strong>: o atributo contiene caracteres (sin restricciones).
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -681,18 +681,18 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo /&gt;                           <span class="codigo-resaltado">&lt;!-- ERROR: falta el atributo "color", obligatorio debido al #REQUIRED --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo /&gt;                           <span class="codigo-resaltado">&lt;!-- ERROR: falta o atributo "color", obligatorio debido al #REQUIRED --&gt;</span></code></pre>
             </div>
           </div>
 
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo sabor="dulce" /&gt;             <span class="codigo-resaltado">&lt;!-- ERROR: el atributo "sabor" no está definido --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo sabor="dulce" /&gt;             <span class="codigo-resaltado">&lt;!-- ERROR: o atributo "sabor" no está definido --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>NMTOKEN</strong>: el atributo sólo contiene letras, dígitos, y los caracteres punto ".", guion "-", subrayado "_" y dos puntos ":".
+        <li><strong>NMTOKEN</strong>: o atributo sólo contiene letras, dígitos, e os caracteres punto ".", guion "-", subrayado "_" e dos puntos ":".
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -737,11 +737,11 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo color="#F0F0F0" /&gt;                       <span class="codigo-resaltado">&lt;!-- ERROR: contiene el carácter # --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo color="#F0F0F0" /&gt;                       <span class="codigo-resaltado">&lt;!-- ERROR: contiene o carácter # --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>NMTOKENS</strong>: el atributo sólo contiene letras, dígitos, y los caracteres punto ".", guion "-", subrayado "_", dos puntos ":" (como el tipo NMTOKEN) y también espacios en blanco.
+        <li><strong>NMTOKENS</strong>: o atributo sólo contiene letras, dígitos, e os caracteres punto ".", guion "-", subrayado "_", dos puntos ":" (como o tipo NMTOKEN) e tamén espacios en blanco.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -783,7 +783,7 @@
             </div>
           </div>
         </li>
-        <li><strong>valores</strong>: el atributo sólo puede contener uno de los términos de una lista. La lista se escribe entre paréntesis, con los términos separados por una barra vertical "|".
+        <li><strong>valores</strong>: o atributo sólo puede contener uno dos términos de unha lista. La lista se escribe entre paréntesis, con os términos separados por unha barra vertical "|".
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -814,11 +814,11 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo color="verde" /&gt;                         <span class="codigo-resaltado">&lt;!-- ERROR: "verde" no está en la lista de valores --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo color="verde" /&gt;                         <span class="codigo-resaltado">&lt;!-- ERROR: "verde" no está na lista de valores --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>ID</strong>: el valor del atributo (no el nombre) debe ser único y no se puede repetir en otros elementos o atributos.
+        <li><strong>ID</strong>: o valor do atributo (no o nombre) debe ser único e no se puede repetir en outros elementos o atributos.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -850,7 +850,7 @@
             <div class="codigo">
               <pre>
 <code class="language-xml">&lt;ejemplo&gt;
-  &lt;libro codigo="1"&gt;Poema de Gilgamesh&lt;/libro&gt;            <span class="codigo-resaltado">&lt;!-- ERROR: el valor de un atributo de tipo ID no puede empezar con un número --&gt;</span>
+  &lt;libro codigo="1"&gt;Poema de Gilgamesh&lt;/libro&gt;            <span class="codigo-resaltado">&lt;!-- ERROR: o valor dun atributo de tipo ID no puede empezar con un número --&gt;</span>
   &lt;libro codigo="L2"&gt;Los preceptos de Ptah-Hotep&lt;/libro&gt;
 &lt;/ejemplo&gt;</code>
 </pre>
@@ -869,7 +869,7 @@
             </div>
           </div>
         </li>
-        <li><strong>IDREF</strong>: el valor del atributo debe coincidir con el valor del atributo ID de otro elemento.
+        <li><strong>IDREF</strong>: o valor do atributo debe coincidir con o valor do atributo ID de otro elemento.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -904,13 +904,13 @@
               <pre>
 <code class="language-xml">&lt;ejemplo&gt;
   &lt;libro codigo="L1"&gt;Poema de Gilgamesh&lt;/libro&gt;
-  &lt;prestamo libro="L2"&gt;Numa Nigerio&lt;/prestamo&gt;            <span class="codigo-resaltado">&lt;!-- ERROR: el valor "L2" no es ID de ningún elemento --&gt;</span>
+  &lt;prestamo libro="L2"&gt;Numa Nigerio&lt;/prestamo&gt;            <span class="codigo-resaltado">&lt;!-- ERROR: o valor "L2" no es ID de ningún elemento --&gt;</span>
 &lt;/ejemplo&gt;</code>
 </pre>
             </div>
           </div>
         </li>
-        <li><strong>IDREFS</strong>: el valor del atributo es una serie de valores separados por espacios que coinciden con el valor del atributo ID de otros elementos.
+        <li><strong>IDREFS</strong>: o valor do atributo es unha serie de valores separados por espacios que coinciden con o valor do atributo ID de outros elementos.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -960,21 +960,21 @@
 <code class="language-xml">&lt;ejemplo&gt;
   &lt;libro codigo="L1"&gt;Poema de Gilgamesh&lt;/libro&gt;
   &lt;libro codigo="L2"&gt;Los preceptos de Ptah-Hotep&lt;/libro&gt;
-  &lt;prestamo libro="L3"&gt;Numa Nigerio&lt;/prestamo&gt;            <span class="codigo-resaltado">&lt;!-- ERROR: el valor "L3" no es ID de ningún elemento --&gt;</span>
+  &lt;prestamo libro="L3"&gt;Numa Nigerio&lt;/prestamo&gt;            <span class="codigo-resaltado">&lt;!-- ERROR: o valor "L3" no es ID de ningún elemento --&gt;</span>
 &lt;/ejemplo&gt;</code>
 </pre>
             </div>
           </div>
         </li>
-        <li><strong>ENTITY</strong>: el valor del atributo es alguna entidad definida en la DTD.</li>
-        <li><strong>ENTITIES</strong>: el valor del atributo es alguna de las entidades de una lista de entidades definida en la DTD.</li>
-        <li><strong>NOTATION</strong>: el valor del atributo es alguna notación definida en la DTD.</li>
+        <li><strong>ENTITY</strong>: o valor do atributo es algunha entidad definida na DTD.</li>
+        <li><strong>ENTITIES</strong>: o valor do atributo es algunha de as entidades de unha lista de entidades definida na DTD.</li>
+        <li><strong>NOTATION</strong>: o valor do atributo es algunha notación definida na DTD.</li>
       </ul>
       <hr class="corta" />
 
-      <p>Los valores iniciales de los atributos son los siguientes:</p>
+      <p>Los valores iniciales dos atributos son os seguintes:</p>
       <ul>
-        <li><strong>#REQUIRED</strong>: el atributo es obligatorio, aunque no se especifica ningún valor predeterminado.
+        <li><strong>#REQUIRED</strong>: o atributo es obligatorio, aunque no se especifica ningún valor predeterminado.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -1012,11 +1012,11 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo /&gt;                                       <span class="codigo-resaltado">&lt;!-- ERROR: falta el atributo "color" --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo /&gt;                                       <span class="codigo-resaltado">&lt;!-- ERROR: falta o atributo "color" --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>#IMPLIED</strong>: el atributo no es obligatorio y no se especifica ningún valor predeterminado.
+        <li><strong>#IMPLIED</strong>: o atributo no es obligatorio e no se especifica ningún valor predeterminado.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -1058,7 +1058,7 @@
             </div>
           </div>
         </li>
-        <li><strong>#FIXED valor</strong>: el atributo tiene un valor fijo.
+        <li><strong>#FIXED valor</strong>: o atributo tiene un valor fijo.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -1089,18 +1089,18 @@
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo color="" /&gt;                              <span class="codigo-resaltado">&lt;!-- ERROR: el atributo "color" no tiene el valor "verde" --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo color="" /&gt;                              <span class="codigo-resaltado">&lt;!-- ERROR: o atributo "color" no tiene o valor "verde" --&gt;</span></code></pre>
             </div>
           </div>
 
           <div class="filaflex">
             <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
             <div class="codigo">
-              <pre><code class="language-xml">&lt;ejemplo color="amarillo" /&gt;                      <span class="codigo-resaltado">&lt;!-- ERROR: el atributo "color" no tiene el valor "verde" --&gt;</span></code></pre>
+              <pre><code class="language-xml">&lt;ejemplo color="amarillo" /&gt;                      <span class="codigo-resaltado">&lt;!-- ERROR: o atributo "color" no tiene o valor "verde" --&gt;</span></code></pre>
             </div>
           </div>
         </li>
-        <li><strong>valor</strong>: el atributo tiene un valor predeterminado.
+        <li><strong>valor</strong>: o atributo tiene un valor predeterminado.
 
           <div class="filaflex">
             <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="40" /></div>
@@ -1147,12 +1147,12 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 17 de abril de 2015</p>
+    <p class="ultmod">Última modificación de esta páxina: 17 de abril de 2015</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

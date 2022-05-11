@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Hojas de estilo CSS en XML. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Hojas de estilo CSS en XML. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.svg" />
@@ -16,7 +16,7 @@
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
@@ -40,17 +40,17 @@
   <section id="css-xml">
     <h2>CSS en XML</h2>
 
-    <p>Las hojas de estilo CSS se desarrollaron para utilizarse junto con el lenguaje de marcas HTML, pero un documento XML también puede hacer referencia a una hoja de estilo CSS y visualizarse en el navegador.</p>
+    <p>Las follas de estilo CSS se  desenvolveron para utilizarse junto con o linguaxe de marcas HTML, pero un documento XML tamén puede hacer referencia a unha folla de estilo CSS e visualizarse no navegador.</p>
 
-    <p>El W3C aprobó en junio de 1999 la recomendación <a href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/">Associating Style Sheets with XML documents 1.0</a>, editada por James Clark y en octubre de 2010 aprobó la recomendación <a href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/">Associating Style Sheets with XML documents 1.0 (2ª edición)</a>, editada por James Clark, que definen cómo vincular documentos XML con hojas de estilo CSS.</p>
+    <p>O W3C aprobó en xuño de 1999 a recomendación <a href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/">Associating Style Sheets with XML documents 1.0</a>, editada por James Clark e en outubro de 2010 aprobó a recomendación <a href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/">Associating Style Sheets with XML documents 1.0 (2ª edición)</a>, editada por James Clark, que definen cómo vincular documentos XML con follas de estilo CSS.</p>
   </section>
 
   <section id="css-no-css">
-    <h2>Documentos XML sin hojas de estilo</h2>
+    <h2>Documentos XML sin follas de estilo</h2>
 
-    <p>Cuando un documento XML no enlaza a una hoja de estilo, los navegadores muestran el contenido completo del documento, etiquetas incluidas.</p>
+    <p>Cuando un documento XML no enlaza a unha folla de estilo, os navegadores muestran o contenido completo do documento, etiquetas incluidas.</p>
 
-    <p>Por ejemplo, <a href="../ejemplos/ejemplos-css/ejemplo-css-1.xml">el documento siguiente</a>:</p>
+    <p>Por ejemplo, <a href="../ejemplos/ejemplos-css/ejemplo-css-1.xml">el documento seguinte</a>:</p>
 
     <div class="codigo">
       <pre>
@@ -59,23 +59,23 @@
   &lt;libro&gt;
     &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
     &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-    &lt;fechaPublicacion año="1973"/&gt;
+    &lt;fechaPublicacion ano="1973"/&gt;
   &lt;/libro&gt;
   &lt;libro&gt;
-    &lt;titulo&gt;Pantaleón y las visitadoras&lt;/titulo&gt;
+    &lt;titulo&gt;Pantaleón e as visitadoras&lt;/titulo&gt;
     &lt;autor fechaNacimiento="28/03/1936"&gt;Mario Vargas Llosa&lt;/autor&gt;
-    &lt;fechaPublicacion año="1973"/&gt;
+    &lt;fechaPublicacion ano="1973"/&gt;
   &lt;/libro&gt;
   &lt;libro&gt;
-    &lt;titulo&gt;Conversación en la catedral&lt;/titulo&gt;
+    &lt;titulo&gt;Conversación na catedral&lt;/titulo&gt;
     &lt;autor fechaNacimiento="28/03/1936"&gt;Mario Vargas Llosa&lt;/autor&gt;
-    &lt;fechaPublicacion año="1969"/&gt;
+    &lt;fechaPublicacion ano="1969"/&gt;
   &lt;/libro&gt;
 &lt;/biblioteca&gt;</code>
 </pre>
     </div>
 
-    <p>... se vería así al abrirlo en los diferentes navegadores:</p>
+    <p>... se vería así al abrirlo en os diferentes navegadores:</p>
 
     <div class="filaflex mcl-centrado">
       <div>
@@ -100,11 +100,11 @@
   </section>
 
   <section id="xml-css">
-    <h2>Documentos XML con hojas de estilo</h2>
+    <h2>Documentos XML con follas de estilo</h2>
 
-    <p>De acuerdo con la recomendación <a href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/">Associating Style Sheets with XML documents 1.0 (2ª edición)</a>, un documento XML puede enlazar a una hoja de estilo mediante la instrucción de procesamiento <span class="xml-pi">&lt;?xml-stylesheet ?&gt;</span>, de forma similar a como se hace en una página web XHTML con la etiqueta <span class="html-eti">&lt;link /&gt;</span>. En ambos casos el atributo <span class="html-atri">href</span> incluye el camino absoluto o relativo a la hoja de estilo CSS.</p>
+    <p>De acuerdo con a recomendación <a href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/">Associating Style Sheets with XML documents 1.0 (2ª edición)</a>, un documento XML puede enlazar a unha folla de estilo mediante a instrucción de procesamento <span class="xml-pi">&lt;?xml-stylesheet ?&gt;</span>, de forma similar a como se hace en unha páxina web XHTML con a etiqueta <span class="html-eti">&lt;link /&gt;</span>. En ambos casos o atributo <span class="html-atri">href</span> incluye o camino absoluto o relativo a a folla de estilo CSS.</p>
 
-    <p>La diferencia es que la etiqueta <span class="html-eti">&lt;link /&gt;</span> forma parte del encabezamiento (etiqueta <span class="html-eti">&lt;head&gt;</span>), mientras que la instrucción de procesamiento <span class="xml-pi">&lt;?xml-stylesheet ... ?&gt;</span> va al principio del documento, después de la declaración XML, como muestra el siguiente ejemplo:</p>
+    <p>La diferencia es que a etiqueta <span class="html-eti">&lt;link /&gt;</span> forma parte do encabezamiento (etiqueta <span class="html-eti">&lt;head&gt;</span>), mientras que a instrucción de procesamento <span class="xml-pi">&lt;?xml-stylesheet ... ?&gt;</span> va al principio do documento, despois da declaración XML, como muestra o seguinte ejemplo:</p>
 
     <div class="filaflex cabecera">
       <div>Ejemplo de enlace a CSS en HTML5</div>
@@ -122,7 +122,7 @@
   <span class="codigo-resaltado">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;estilo.css&quot; /&gt;</span>
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;Esta página es HTML 5 válido.&lt;/p&gt;
+  &lt;p&gt;Esta páxina es HTML 5 válido.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code>
 </pre>
@@ -134,7 +134,7 @@
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
       </div>
@@ -142,9 +142,9 @@
 
     <hr class="corta" />
 
-    <p>Si un documento XML enlaza a una hoja de estilo, los navegadores ya no muestran las etiquetas y aplican la hoja de estilo.</p>
+    <p>Si un documento XML enlaza a unha folla de estilo, os navegadores xa no muestran as etiquetas e aplican a folla de estilo.</p>
     <ul>
-      <li>En el ejemplo siguiente, se puede comprobar que el navegador ya no muestra las etiquetas, sino únicamente el texto contenido en ellas. Y como la hoja de estilo no contiene ninguna regla, todo el texto se ve de la misma manera.<br /> Pero también se observa que el navegador muestra el texto de los dos elementos <span class="xml-tag">&lt;titulo&gt;</span> y <span class="xml-tag">&lt;autor&gt;</span> uno detrás de otro. Eso se debe a que el navegador aplica únicamente la hoja de estilo enlazada y no aplica la hoja de estilo predeterminada del navegador. Más adelante en esta misma lección, el apartado <a href="#css-display">la propiedad <span class="css-prop">display</span></a> comenta cómo definir la forma de presentación de los elementos (como bloques, listas o tablas, por ejemplo).
+      <li>En o ejemplo seguinte, se puede comprobar que o navegador xa no muestra as etiquetas, sino únicamente o texto contenido en ellas. e como a folla de estilo no contiene ninguna regla, todo o texto se ve da misma manera.<br /> Pero tamén se observa que o navegador muestra o texto dos dos elementos <span class="xml-tag">&lt;titulo&gt;</span> e <span class="xml-tag">&lt;autor&gt;</span> uno detrás de otro. Eso se debe a que o navegador aplica únicamente a folla de estilo enlazada e no aplica a folla de estilo predeterminada do navegador. Más adelante en esta misma sección, o apartado <a href="#css-display">la propiedad <span class="css-prop">display</span></a> comenta cómo definir a forma de presentación dos elementos (como bloques, listas o tablas, por ejemplo).
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -161,18 +161,18 @@
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
           <div class="codigo">
             <pre><code class="language-css"></code></pre>
           </div>
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-1.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-1.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-1.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
-      <li>En el ejemplo siguiente, la hoja de estilo sí que modifica el aspecto del elemento <span class="xml-tag">&lt;titulo&gt;</span> (aunque el texto se siga mostrando todo junto, por el mismo motivo que en el ejemplo anterior)..<br />
+      <li>En o ejemplo seguinte, a folla de estilo sí que modifica o aspecto do elemento <span class="xml-tag">&lt;titulo&gt;</span> (aunque o texto se siga mostrando todo junto, por o mismo motivo que no ejemplo anterior)..<br />
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -189,7 +189,7 @@
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
@@ -200,7 +200,7 @@
 }</code>
 </pre>
           </div>
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-2.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-2.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-2.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
@@ -208,9 +208,9 @@
 
     <hr class="corta" />
 
-    <p>Es posible "obligar" al navegador a aplicar la hoja de estilo predeterminada del navegador:</p>
+    <p>Es posible "obligar" al navegador a aplicar a folla de estilo predeterminada do navegador:</p>
     <ul>
-      <li>Si el documento XML utiliza el espacio de nombres del html y utiliza etiquetas html, el navegador aplica la hoja de estilo predeterminada del navegador a esos elementos, como muestra el siguiente ejemplo:
+      <li>Si o documento XML utiliza o espacio de nombres da HTML e utiliza etiquetas html, o navegador aplica a folla de estilo predeterminada do navegador a esos elementos, como muestra o seguinte ejemplo:
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -226,15 +226,15 @@
   <span class="codigo-resaltado">&lt;h1&gt;</span>La vida está en otra parte<span class="codigo-resaltado">&lt;/h1&gt;</span>
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
   &lt;personaje&gt;Jaromil&lt;/personaje&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-3.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-3.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-3.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
-      <li>Pero si no se utiliza el espacio de nombres, aunque se utilicen etiquetas html el navegador no aplica la hoja de estilo predeterminada, como muestra el siguiente ejemplo:
+      <li>Pero si no se utiliza o espacio de nombres, aunque se utilicen etiquetas html o navegador no aplica a folla de estilo predeterminada, como muestra o seguinte ejemplo:
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -250,11 +250,11 @@
   <span class="codigo-resaltado">&lt;h1&gt;</span>La vida está en otra parte<span class="codigo-resaltado">&lt;/h1&gt;</span>
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
   &lt;personaje&gt;Jaromil&lt;/personaje&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-4.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-4.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-4.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
@@ -262,9 +262,9 @@
 
     <hr class="corta" />
 
-    <p>Como ocurre en el HTML, ...</p>
+    <p>Como ocurre en a HTML, ...</p>
     <ul>
-      <li>Un documento XML puede enlazar a varias hojas de estilo, que se aplicarán simultáneamente:
+      <li>Un documento XML puede enlazar a varias follas de estilo, que se aplicarán simultáneamente:
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -282,7 +282,7 @@
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
@@ -304,11 +304,11 @@ autor {
 </pre>
             </div>
           </div>
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-6.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-6.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-6.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
-      <li>El enlace a la hoja de estilo puede contener el atributo <span class="html-atri">title</span>, cuyo contenido se muestra en Firefox en el menú <span class="soft-menu">Ver &gt; Estilo de página</span>.
+      <li>O enlace a a folla de estilo puede contener o atributo <span class="html-atri">title</span>, cuyo contenido se muestra en Firefox no menú <span class="soft-menu">Ver &gt; Estilo de páxina</span>.
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -325,7 +325,7 @@ autor {
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
@@ -336,13 +336,13 @@ autor {
 }</code>
 </pre>
           </div>
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-7.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-7.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-7.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
 
       </li>
-      <li>Un documento XML puede enlazar a hojas de estilo alternativas, que en Firefox se pueden seleccionar mediante el menú <span class="soft-menu">Ver &gt; Estilo de página</span>.
-        <p>Para ser tratadas como hojas de estilo alternativas, basta con que los enlaces incluyan el atributo <span class="html-atri">title</span>. La primera hoja de estilo enlazada es la hoja de estilo predeterminada y el resto, alternativas.</p>
+      <li>Un documento XML puede enlazar a follas de estilo alternativas, que en Firefox se pueden seleccionar mediante o menú <span class="soft-menu">Ver &gt; Estilo de páxina</span>.
+        <p>Para ser tratadas como follas de estilo alternativas, basta con que os enlaces incluyan o atributo <span class="html-atri">title</span>. La primera folla de estilo enlazada es a folla de estilo predeterminada e o resto, alternativas.</p>
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -360,7 +360,7 @@ autor {
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
@@ -383,11 +383,11 @@ autor {
             </div>
           </div>
 
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-8.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-8.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-8.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
-      <li>Si se quiere indicar explícitamente qué hojas de estilo son alternativas, se puede incluir el atributo <span class="html-atri">alternate</span> con el valor <span class="html-atri-valor">yes</span> (aunque se deben incluir de todas formas los atributos <span class="html-atri">title</span>).
+      <li>Si se quiere indicar explícitamente qué follas de estilo son alternativas, se puede incluir o atributo <span class="html-atri">alternate</span> con o valor <span class="html-atri-valor">yes</span> (aunque se deben incluir de todas formas os atributos <span class="html-atri">title</span>).
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -405,7 +405,7 @@ autor {
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
@@ -428,11 +428,11 @@ autor {
             </div>
           </div>
 
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-9.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-9.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-9.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
-      <li>Al usar el atributo <span class="html-atri">alternate</span> con el valor <span class="html-atri-valor">yes</span>, el orden de los enlaces a las hojas de estilo no se tiene en cuenta.
+      <li>Al usar o atributo <span class="html-atri">alternate</span> con o valor <span class="html-atri-valor">yes</span>, o orden dos enlaces a as follas de estilo no se tiene en cuenta.
 
         <div class="filaflex cabecera">
           <div>XML</div>
@@ -450,7 +450,7 @@ autor {
 &lt;libro&gt;
   &lt;titulo&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
           </div>
@@ -473,7 +473,7 @@ autor {
             </div>
           </div>
 
-          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-10.xml">ERROR (no puede mostrarse el objeto)</object></div>
+          <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-2-10.xml">ERROR (no puede mostrarse o objeto)</object></div>
           <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-2-10.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
         </div>
       </li>
@@ -481,27 +481,27 @@ autor {
   </section>
 
   <section id="css-ejemplos">
-    <h2>Ejemplos de hojas de estilo para XML</h2>
+    <h2>Ejemplos de follas de estilo para XML</h2>
 
     <section id="css-display">
       <h3>La propiedad <span class="css-prop">display</span></h3>
 
-      <p>Al escribir una hoja de estilo para un documento XML hay que tener en cuenta que los navegadores no aplican generalmente la hoja de estilo predeterminada (salvo que se utilicen etiquetas html asociándolas al espacio de nombres del xhtml como en los ejemplos anteriores), así que al escribir una hoja de estilo para un documento XML hay que definir propiedades que normalmente no se suelen definir.</p>
+      <p>Al escribir unha folla de estilo para un documento XML hay que tener en cuenta que os navegadores no aplican generalmente a folla de estilo predeterminada (salvo que se utilicen etiquetas html asociándolas al espacio de nombres do xhtml como en os ejemplos anteriores), así que al escribir unha folla de estilo para un documento XML hay que definir propiedades que normalmente no se suelen definir.</p>
 
-      <p>La más importante es la propiedad <span class="css-prop">display</span>, que establece el modo de visualización del elemento.</p>
+      <p>La máis importante es a propiedad <span class="css-prop">display</span>, que establece o modo de visualización do elemento.</p>
 
-      <p>Los valores posibles de la propiedad <span class="css-prop">display</span> son <span class="css-valor">none</span>, <span class="css-valor">block</span>, <span class="css-valor">compact</span>, <span class="css-valor">inline</span>, <span class="css-valor">inline-block</span>, <span class="css-valor">inline-table</span>, <span class="css-valor">list-item</span>, <span class="css-valor">marker</span><sup>(-)</sup>, <span class="css-valor">run-in</span>, <span class="css-valor">table</span>, <span class="css-valor">table-caption</span>, <span class="css-valor">table-cell</span>, <span class="css-valor">table-column</span>, <span class="css-valor">table-column-group</span>, <span class="css-valor">table-footer-group</span>, <span class="css-valor">table-header-group</span>, <span class="css-valor">table-row</span> y <span class="css-valor">table-row-group</span>.</p>
+      <p>Los valores posibles da propiedad <span class="css-prop">display</span> son <span class="css-valor">none</span>, <span class="css-valor">block</span>, <span class="css-valor">compact</span>, <span class="css-valor">inline</span>, <span class="css-valor">inline-block</span>, <span class="css-valor">inline-table</span>, <span class="css-valor">list-item</span>, <span class="css-valor">marker</span><sup>(-)</sup>, <span class="css-valor">run-in</span>, <span class="css-valor">table</span>, <span class="css-valor">table-caption</span>, <span class="css-valor">table-cell</span>, <span class="css-valor">table-column</span>, <span class="css-valor">table-column-group</span>, <span class="css-valor">table-footer-group</span>, <span class="css-valor">table-header-group</span>, <span class="css-valor">table-row</span> e <span class="css-valor">table-row-group</span>.</p>
 
-      <p>Los modos de visualización más utilizados son:</p>
+      <p>Los modos de visualización máis utilizados son:</p>
       <ul>
         <li><span class="css-valor">none</span> (ninguno) permite ocultar elementos.</li>
-        <li><span class="css-valor">block</span> (bloque) es el modo de visualización de los elementos de tipo bloque, como párrafos (<span class="html-eti">&lt;p&gt;</span>), encabezados (<span class="html-eti">&lt;h1&gt;</span>, <span class="html-eti">&lt;h2&gt;</span>, ...), etc. El elemento ocupa toda la ventana en horizontal y ocupa el espacio vertical necesario para alojar el contenido del elemento.</li>
-        <li><span class="css-valor">inline</span> (elemento en línea) es el modo de visualización de etiquetas como <span class="html-eti">&lt;strong&gt;</span>, <span class="html-eti">&lt;em&gt;</span>, <span class="html-eti">&lt;span&gt;</span>, <span class="html-eti">&lt;a&gt;</span>, etc. El elemento sólo ocupa el espacio necesario para alojar el contenido del elemento. En HTML los elementos en-línea tienen que estar contenidos dentro de elementos de bloque.</li>
-        <li><span class="css-valor">list-item</span> (lista) es el modo de visualización de elementos de listas como <span class="html-eti">&lt;li&gt;</span>, <span class="html-eti">&lt;dd&gt;</span>, <span class="html-eti">&lt;dt&gt;</span>.</li>
-        <li><span class="css-valor">table</span> (tabla), <span class="css-valor">table-row</span> (fila) y <span class="css-valor">table-cell</span> (celda) se combinan para mostrar elementos en forma de tabla.</li>
+        <li><span class="css-valor">block</span> (bloque) es o modo de visualización dos elementos de tipo bloque, como párrafos (<span class="html-eti">&lt;p&gt;</span>), encabezados (<span class="html-eti">&lt;h1&gt;</span>, <span class="html-eti">&lt;h2&gt;</span>, ...), etc. O elemento ocupa toda a ventana en horizontal e ocupa o espacio vertical necesario para alojar o contenido do elemento.</li>
+        <li><span class="css-valor">inline</span> (elemento en línea) es o modo de visualización de etiquetas como <span class="html-eti">&lt;strong&gt;</span>, <span class="html-eti">&lt;em&gt;</span>, <span class="html-eti">&lt;span&gt;</span>, <span class="html-eti">&lt;a&gt;</span>, etc. O elemento sólo ocupa o espacio necesario para alojar o contenido do elemento. En HTML os elementos en-línea teñen que estar contenidos dentro de elementos de bloque.</li>
+        <li><span class="css-valor">list-item</span> (lista) es o modo de visualización de elementos de listas como <span class="html-eti">&lt;li&gt;</span>, <span class="html-eti">&lt;dd&gt;</span>, <span class="html-eti">&lt;dt&gt;</span>.</li>
+        <li><span class="css-valor">table</span> (tabla), <span class="css-valor">table-row</span> (fila) e <span class="css-valor">table-cell</span> (celda) se combinan para mostrar elementos en forma de tabla.</li>
       </ul>
 
-      <p>Los ejemplos a continuación muestran el documento siguiente utilizando diferentes hojas de estilo</p>
+      <p>Los ejemplos a continuación muestran o documento seguinte utilizando diferentes follas de estilo</p>
 
       <div class="codigo">
         <pre>
@@ -513,12 +513,12 @@ autor {
     &lt;fechaPublicacion&gt;1973&lt;/fechaPublicacion&gt;
   &lt;/libro&gt;
   &lt;libro&gt;
-    &lt;titulo&gt;Pantaleón y las visitadoras&lt;/titulo&gt;
+    &lt;titulo&gt;Pantaleón e as visitadoras&lt;/titulo&gt;
     &lt;autor&gt;Mario Vargas Llosa&lt;/autor&gt;
     &lt;fechaPublicacion&gt;1973&lt;/fechaPublicacion&gt;
   &lt;/libro&gt;
   &lt;libro&gt;
-    &lt;titulo&gt;Conversación en la catedral&lt;/titulo&gt;
+    &lt;titulo&gt;Conversación na catedral&lt;/titulo&gt;
     &lt;autor&gt;Mario Vargas Llosa&lt;/autor&gt;
     &lt;fechaPublicacion&gt;1969&lt;/fechaPublicacion&gt;
   &lt;/libro&gt;
@@ -541,11 +541,11 @@ autor {
 <code class="language-css"></code>
 </pre>
             </div>
-            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-1.xml">ERROR (no puede mostrarse el objeto)</object></div>
+            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-1.xml">ERROR (no puede mostrarse o objeto)</object></div>
             <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-3-1.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
           </div>
         </li>
-        <li>Si el único elemento de bloque es <span class="xml-tag">&lt;libro&gt;</span>:
+        <li>Si o único elemento de bloque es <span class="xml-tag">&lt;libro&gt;</span>:
 
           <div class="filaflex cabecera">
             <div>CSS</div>
@@ -561,11 +561,11 @@ autor {
 }</code>
 </pre>
             </div>
-            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-2.xml">ERROR (no puede mostrarse el objeto)</object></div>
+            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-2.xml">ERROR (no puede mostrarse o objeto)</object></div>
             <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-3-2.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
           </div>
         </li>
-        <li>Si <span class="xml-tag">&lt;titulo&gt;</span>, <span class="xml-tag">&lt;autor&gt;</span> y <span class="xml-tag">&lt;fechaPublicacion&gt;</span> son bloques:
+        <li>Si <span class="xml-tag">&lt;titulo&gt;</span>, <span class="xml-tag">&lt;autor&gt;</span> e <span class="xml-tag">&lt;fechaPublicacion&gt;</span> son bloques:
 
           <div class="filaflex cabecera">
             <div>CSS</div>
@@ -581,11 +581,11 @@ autor {
 }</code>
 </pre>
             </div>
-            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-3.xml" style="height: 13em;">ERROR (no puede mostrarse el objeto)</object></div>
+            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-3.xml" style="height: 13em;">ERROR (no puede mostrarse o objeto)</object></div>
             <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-3-3.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
           </div>
         </li>
-        <li>Mostrando el documento como una lista no ordenada:
+        <li>Mostrando o documento como unha lista no ordenada:
 
           <div class="filaflex cabecera">
             <div>CSS</div>
@@ -603,11 +603,11 @@ autor {
 }</code>
 </pre>
             </div>
-            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-4.xml" style="height: 12em;">ERROR (no puede mostrarse el objeto)</object></div>
+            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-4.xml" style="height: 12em;">ERROR (no puede mostrarse o objeto)</object></div>
             <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-3-4.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
           </div>
         </li>
-        <li>Mostrando el documento como una lista ordenada (en el apartado siguiente se comenta con más detalle este caso):
+        <li>Mostrando o documento como unha lista ordenada (no apartado seguinte se comenta con máis detalle este caso):
 
           <div class="filaflex cabecera">
             <div>CSS</div>
@@ -638,11 +638,11 @@ autor, fechaPublicacion {
 }</code>
 </pre>
             </div>
-            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-5.xml" style="height: 12em;">ERROR (no puede mostrarse el objeto)</object></div>
+            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-5.xml" style="height: 12em;">ERROR (no puede mostrarse o objeto)</object></div>
             <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-3-5.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
           </div>
         </li>
-        <li>Mostrando el documento como una tabla:
+        <li>Mostrando o documento como unha tabla:
 
           <div class="filaflex cabecera">
             <div>CSS</div>
@@ -669,7 +669,7 @@ titulo, autor, fechaPublicacion {
 }</code>
 </pre>
             </div>
-            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-6.xml">ERROR (no puede mostrarse el objeto)</object></div>
+            <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-3-6.xml">ERROR (no puede mostrarse o objeto)</object></div>
             <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-3-6.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
           </div>
         </li>
@@ -679,7 +679,7 @@ titulo, autor, fechaPublicacion {
     <section id="css-listas">
       <h3>Mostrar elementos como listas ordenadas</h3>
 
-      <p>Si queremos mostrar elementos en forma de lista ordenada, hay que tener en cuenta que Firefox no muestra correctamente los contadores de las listas ordenadas:</p>
+      <p>Si queremos mostrar elementos en forma de lista ordenada, hay que tener en cuenta que Firefox no muestra correctamente os contadores de as listas ordenadas:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -703,13 +703,13 @@ titulo, autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-1.xml" style="height: 12em;">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-1.xml" style="height: 12em;">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-4-1.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
-      <p><strong>Nota</strong>: Firefox no aumenta el valor del contador, como se comenta en la <a href="../otros/diferencias-navegadores.html#listas-ordenadas">lección de diferencias entre navegadores</a>.</p>
+      <p><strong>Nota</strong>: Firefox no aumenta o valor do contador, como se comenta na <a href="../otros/diferencias-navegadores.html#listas-ordenadas">sección de diferencias entre navegadores</a>.</p>
 
-      <p>Además, hay que tener en cuenta que los valores del contador aumentan en Chrome y Edge si los elementos con contadores se encuentran dentro del mismo elemento. En el ejemplo siguiente, el contador sólo se encuentra en los elementos <span class="xml-tag">&lt;titulo&gt;</span> y por tanto el contador no aumenta, ya que los elementos <span class="xml-tag">&lt;titulo&gt;</span> pertenecen a diferentes elementos <span class="xml-tag">&lt;libro&gt;</span>.</p>
+      <p>Además, hay que tener en cuenta que os valores do contador aumentan en Chrome e Edge si os elementos con contadores se encuentran dentro do mismo elemento. En o ejemplo seguinte, o contador sólo se encuentra en os elementos <span class="xml-tag">&lt;titulo&gt;</span> e por tanto o contador no aumenta, xa que os elementos <span class="xml-tag">&lt;titulo&gt;</span> pertenecen a diferentes elementos <span class="xml-tag">&lt;libro&gt;</span>.</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -738,13 +738,13 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-2.xml" style="height: 13em;">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-2.xml" style="height: 13em;">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-4-2.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
-      <p><strong>Nota</strong>: Aunque los tres navegadores se comportan de la misma manera, Google Chrome y Edge no aumentan el contador porque no se debe hacer en este caso, mientras que Firefox no aumenta el valor del contador porque no lo hace nunca.</p>
+      <p><strong>Nota</strong>: Aunque os tres navegadores se comportan da misma manera, Google Chrome e Edge no aumentan o contador porque no se debe hacer en este caso, mientras que Firefox no aumenta o valor do contador porque no lo hace nunca.</p>
 
-      <p>Si el contador se asocia al elemento <span class="xml-tag">&lt;libro&gt;</span>, Chrome y Edge sí que aumentan el valor del contador, puesto que todos los elementos <span class="xml-tag">&lt;libro&gt;</span> pertenecen al mismo elemento <span class="xml-tag">&lt;biblioteca&gt;</span>.</p>
+      <p>Si o contador se asocia al elemento <span class="xml-tag">&lt;libro&gt;</span>, Chrome e Edge sí que aumentan o valor do contador, puesto que todos os elementos <span class="xml-tag">&lt;libro&gt;</span> pertenecen al mismo elemento <span class="xml-tag">&lt;biblioteca&gt;</span>.</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -777,11 +777,11 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-3.xml" style="height: 13em;">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-3.xml" style="height: 13em;">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-4-3.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
-      <p>Para conseguir que se vean las listas ordenadas en todos los navegadores, hay que utilizar contadores CSS, que se explican en <a href="https://www.mclibre.org/consultar/htmlcss/css/css-pseudoclases.html#pseudo-elementos-before-after">la lección sobre pseudo-clases y pseudo-elementos de los apuntes de HTML y CSS</a>:</p>
+      <p>Para conseguir que se vean as listas ordenadas en todos os navegadores, hay que utilizar contadores CSS, que se explican en <a href="https://www.mclibre.org/consultar/htmlcss/css/css-pseudoclases.html#pseudo-elementos-before-after">la sección sobre pseudo-clases e pseudo-elementos dos apuntes de HTML e CSS</a>:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -813,11 +813,11 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-4.xml" style="height: 13em;">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-4.xml" style="height: 13em;">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-4-4.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
-      <p>Al utilizar contadores, ya no necesario que los elementos con contador se encuentren contenidos en el mismo elemento:</p>
+      <p>Al utilizar contadores, xa no necesario que os elementos con contador se encuentren contenidos no mismo elemento:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -848,7 +848,7 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-5.xml" style="height: 13em;">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-4-5.xml" style="height: 13em;">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-4-5.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
     </section>
@@ -856,7 +856,7 @@ autor, fechaPublicacion {
     <section id="css-class-id">
       <h3>Los atributos <span class="html-atri">class</span> e <span class="html-atri">id</span></h3>
 
-      <p>Cuando un documento XML incluye atributos <span class="html-atri">class</span> e <span class="html-atri">id</span> y la hoja de estilo hace referencia a ellos mediante los selectores almohadilla (#) y punto (.), Firefox y Microsoft Edge aplican ambas reglas, pero Google Chrome aplica únicamente el selector almohadilla, como muestra el ejemplo siguiente:</p>
+      <p>Cuando un documento XML incluye atributos <span class="html-atri">class</span> e <span class="html-atri">id</span> e a folla de estilo hace referencia a ellos mediante os selectores almohadilla (#) e punto (.), Firefox e Microsoft Edge aplican ambas reglas, pero Google Chrome aplica únicamente o selector almohadilla, como muestra o ejemplo seguinte:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -879,7 +879,7 @@ autor, fechaPublicacion {
 &lt;libro&gt;
   &lt;titulo <span class="codigo-resaltado">class="color"</span>&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor <span class="codigo-resaltado">id="grande"</span>&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
         </div>
@@ -894,7 +894,7 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-1.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-1.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-5-1.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
@@ -919,11 +919,11 @@ autor, fechaPublicacion {
         </div>
       </div>
 
-      <p><strong>Nota</strong>: No sé si está definido en alguna recomendación que es lo que tendrían que hacer los navegadores en este caso.</p>
+      <p><strong>Nota</strong>: No sé si está definido en algunha recomendación que es lo que tendrían que hacer os navegadores en este caso.</p>
 
       <hr class="corta" />
 
-      <p>Para que los tres navegadores reconozcan los atributos <span class="html-atri">class</span> e <span class="html-atri">id</span>, una solución es utilizar el espacio de nombres del html, como muestra el siguiente ejemplo:</p>
+      <p>Para que os tres navegadores reconozcan os atributos <span class="html-atri">class</span> e <span class="html-atri">id</span>, unha solución es utilizar o espacio de nombres da HTML, como muestra o seguinte ejemplo:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -941,7 +941,7 @@ autor, fechaPublicacion {
 &lt;libro <span class="codigo-resaltado">xmlns="http://www.w3.org/1999/xhtml"</span>&gt;
   &lt;titulo <span class="codigo-resaltado">class="color"</span>&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor <span class="codigo-resaltado">id="grande"</span>&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
         </div>
@@ -956,11 +956,11 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-2.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-2.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-5-2.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
-      <p>Otra solución es utilizar en la hoja de estilo el <a href="https://www.mclibre.org/consultar/htmlcss/css/css-selectores.html#atributo">selector de atributo</a> (por ejemplo, [atributo="valor"]), como muestra el siguiente ejemplo:</p>
+      <p>Otra solución es utilizar na folla de estilo o <a href="https://www.mclibre.org/consultar/htmlcss/css/css-selectores.html#atributo">selector de atributo</a> (por ejemplo, [atributo="valor"]), como muestra o seguinte ejemplo:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -978,7 +978,7 @@ autor, fechaPublicacion {
 &lt;libro&gt;
   &lt;titulo <span class="codigo-resaltado">class="color"</span>&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor <span class="codigo-resaltado">id="grande"</span>&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
         </div>
@@ -993,11 +993,11 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-3.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-3.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-5-3.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
 
-      <p>Si se utilizan selectores de atributos, los nombres de los atributos no tienen por qué ser <span class="html-atri">class</span> e <span class="html-atri">id</span>, como muestra el siguiente ejemplo:</p>
+      <p>Si se utilizan selectores de atributos, os nombres dos atributos no teñen por qué ser <span class="html-atri">class</span> e <span class="html-atri">id</span>, como muestra o seguinte ejemplo:</p>
 
       <div class="filaflex cabecera">
         <div class="icono-navegadores-vacio"><img src="../varios/iconos/icono-transparente.svg" alt="Hueco" width="40" height="4" /></div>
@@ -1015,7 +1015,7 @@ autor, fechaPublicacion {
 &lt;libro&gt;
   &lt;titulo <span class="codigo-resaltado">color="rojo"</span>&gt;La vida está en otra parte&lt;/titulo&gt;
   &lt;autor <span class="codigo-resaltado">tamanyo="grande"</span>&gt;Milan Kundera&lt;/autor&gt;
-  &lt;fechaPublicacion año="1973"/&gt;
+  &lt;fechaPublicacion ano="1973"/&gt;
 &lt;/libro&gt;</code>
 </pre>
         </div>
@@ -1030,19 +1030,19 @@ autor, fechaPublicacion {
 }</code>
 </pre>
         </div>
-        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-4.xml">ERROR (no puede mostrarse el objeto)</object></div>
+        <div class="resultado-object"><object type="application/xml" data="../ejemplos/ejemplos-css/ejemplo-css-5-4.xml">ERROR (no puede mostrarse o objeto)</object></div>
         <div class="icono-enlace"><a href="../ejemplos/ejemplos-css/ejemplo-css-5-4.xml"><img src="../varios/iconos/icono-enlace.svg" alt="Enlace a ejemplo" title="Enlace a ejemplo" width="31" height="36" /></a></div>
       </div>
     </section>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 19 de abril de 2018</p>
+    <p class="ultmod">Última modificación de esta páxina: 19 de abril de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

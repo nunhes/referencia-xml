@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Examen 10/06/13. Exámenes. XML. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <title>Exame 10/06/13. Exámenes. XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../../varios/xml.css" title="mclibre" />
   <link rel="icon" href="../../varios/favicon.svg" />
@@ -11,17 +11,17 @@
 </head>
 
 <body>
-  <h1>Examen 10 de junio de 2013</h1>
+  <h1>Exame 10 de xuño de 2013</h1>
 
   <nav>
     <p>
       <a href="../../index.html"><img src="../../varios/iconos/icono-xml.svg" alt="Índice de XML" title="Índice de XML" width="48" height="48" /></a>
-      <a href="#"><img src="../../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="#"><img src="../../varios/iconos/icono-arrow-circle-up.svg" alt="Principio da páxina" title="Principio da páxina" width="36" height="36" /></a>
       <a href="../examenes.html"><img src="../../varios/iconos/icono-school.svg" alt="Exámenes" title="Exámenes" width="36" height="36" /></a>
     </p>
 
     <div class="toc">
-      <h2>Examen 10/06/13</h2>
+      <h2>Exame 10/06/13</h2>
 
       <ol>
         <li><a href="#ejercicio-1">DTD</a></li>
@@ -31,12 +31,12 @@
     </div>
   </nav>
 
-  <p>Resuelva los siguientes ejercicios guardando las respuestas en una carpeta cuyo nombre contenga su nombre y apellidos.</p>
+  <p>Resuelva os seguintes exercicios guardando as respostas en unha carpeta cuyo nombre contenga su nombre e apellidos.</p>
 
   <section id="ejercicio-1">
-    <h2>Ejercicio 1. DTD</h2>
+    <h2>Exercicio 1. DTD</h2>
 
-    <p>Escriba la DTD correspondiente al documento siguiente:</p>
+    <p>Escriba a DTD correspondiente al documento seguinte:</p>
 
     <div class="codigo">
       <pre>
@@ -47,17 +47,17 @@
     &lt;director nombre="Martin Scorsese" fecha_nacimiento="1942" pais_nacimiento="EEUU" /&gt;
   &lt;/directores&gt;
   &lt;peliculas&gt;
-    &lt;pelicula titulo="Uno de los nuestros"&gt;
+    &lt;pelicula titulo="Uno dos nuestros"&gt;
       &lt;estreno&gt;1990&lt;/estreno&gt;
       &lt;titulo&gt;Goodfellas&lt;/titulo&gt;
       &lt;director&gt;Martin Scorsese&lt;/director&gt;
     &lt;/pelicula&gt;
-    &lt;pelicula titulo="Thelma y Louise"&gt;
+    &lt;pelicula titulo="Thelma e Louise"&gt;
       &lt;estreno&gt;1991&lt;/estreno&gt;
       &lt;titulo&gt;Thelma and Louise&lt;/titulo&gt;
       &lt;director&gt;Ridley Scott&lt;/director&gt;
     &lt;/pelicula&gt;
-    &lt;pelicula titulo="El truco final"&gt;
+    &lt;pelicula titulo="O truco final"&gt;
       &lt;estreno&gt;2006&lt;/estreno&gt;
       &lt;titulo&gt;The Prestige&lt;/titulo&gt;
       &lt;director&gt;Christopher Nolan&lt;/director&gt;
@@ -69,15 +69,15 @@
 
     <p>teniendo en cuenta que:</p>
     <ul>
-      <li>la DTD debe admitir que primero aparezcan los directores y luego las películas (como en el ejemplo), o al revés.</li>
-      <li>las únicas informaciones obligatorias son la etiqueta con el nombre de los directores y el atributo con el título en español de las películas</li>
+      <li>la DTD debe admitir que primero aparezcan os directores e luego as películas (como no ejemplo), o al revés.</li>
+      <li>las únicas informacións obligatorias son a etiqueta con o nombre dos directores e o atributo con o título en espanol de as películas</li>
     </ul>
   </section>
 
   <section id="ejercicio-2">
-    <h2>Ejercicio 2. XPath</h2>
+    <h2>Exercicio 2. XPath</h2>
 
-    <p>Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan <strong>exactamente</strong> la respuesta indicadas en los cuadros. Escriba todas las expresiones XPath en un único fichero de texto, numerando las respuestas.</p>
+    <p>Dado o seguinte documento XML, escriba as expresións XPath que devolvan <strong>exactamente</strong> a resposta indicadas en os cuadros. Escriba todas as expresións XPath nun único fichero de texto, numerando as respostas.</p>
 
     <div class="codigo">
       <pre>
@@ -93,19 +93,19 @@
     &lt;compositor nombre="David Julyan" fecha_nacimiento="1967" pais_nacimiento="UK" /&gt;
   &lt;/compositores&gt;
   &lt;peliculas&gt;
-    &lt;pelicula titulo="Uno de los nuestros"&gt;
+    &lt;pelicula titulo="Uno dos nuestros"&gt;
       &lt;estreno&gt;1990&lt;/estreno&gt;
       &lt;titulo&gt;Goodfellas&lt;/titulo&gt;
       &lt;director&gt;Martin Scorsese&lt;/director&gt;
       &lt;compositor&gt;Varios&lt;/compositor&gt;
     &lt;/pelicula&gt;
-    &lt;pelicula titulo="Thelma y Louise"&gt;
+    &lt;pelicula titulo="Thelma e Louise"&gt;
       &lt;estreno&gt;1991&lt;/estreno&gt;
-      &lt;titulo&gt;Thelma y Louise&lt;/titulo&gt;
+      &lt;titulo&gt;Thelma e Louise&lt;/titulo&gt;
       &lt;director&gt;Ridley Scott&lt;/director&gt;
       &lt;compositor&gt;Hans Zimmer&lt;/compositor&gt;
     &lt;/pelicula&gt;
-    &lt;pelicula titulo="El truco final"&gt;
+    &lt;pelicula titulo="O truco final"&gt;
       &lt;estreno&gt;2006&lt;/estreno&gt;
       &lt;titulo&gt;The Prestige&lt;/titulo&gt;
       &lt;director&gt;Christopher Nolan&lt;/director&gt;
@@ -117,7 +117,7 @@
       &lt;director&gt;Christopher Nolan&lt;/director&gt;
       &lt;compositor&gt;Hans Zimmer&lt;/compositor&gt;
     &lt;/pelicula&gt;
-   &lt;pelicula titulo="La cabaña en el bosque"&gt;
+   &lt;pelicula titulo="La cabaña no bosque"&gt;
       &lt;estreno&gt;2011&lt;/estreno&gt;
       &lt;titulo&gt;The Cabin in the Woods&lt;/titulo&gt;
       &lt;director&gt;Drew Goddard&lt;/director&gt;
@@ -128,28 +128,28 @@
 </pre>
     </div>
     <ol>
-      <li>Título de las películas en inglés:
+      <li>Título de as películas en inglés:
 
         <div class="resultado-xpath">
           <pre>
 <code class="language-xml">Goodfellas
-Thelma y Louise
+Thelma e Louise
 The Prestige
 Inception
 The Cabin in the Woods</code>
 </pre>
         </div>
       </li>
-      <li>Título en español de las películas estrenadas antes de 2005:
+      <li>Título en espanol de as películas estrenadas antes de 2005:
 
         <div class="resultado-xpath">
           <pre>
-<code class="language-xml"> <span class="xml-attr">titulo</span>="Uno de los nuestros"
- <span class="xml-attr">titulo</span>="Thelma y Louise"</code>
+<code class="language-xml"> <span class="xml-attr">titulo</span>="Uno dos nuestros"
+ <span class="xml-attr">titulo</span>="Thelma e Louise"</code>
 </pre>
         </div>
       </li>
-      <li>Títulos de las películas de directores nacidos en EEUU:
+      <li>Títulos de as películas de directores nacidos en EEUU:
 
         <div class="resultado-xpath">
           <pre>
@@ -158,7 +158,7 @@ The Cabin in the Woods</code>
 </pre>
         </div>
       </li>
-      <li>Compositor de las películas del director nacido en 1970:
+      <li>Compositor de as películas do director nacido en 1970:
 
         <div class="resultado-xpath">
           <pre>
@@ -171,11 +171,11 @@ Hans Zimmer</code>
   </section>
 
   <section id="ejercicio-3">
-    <h2>Ejercicio 3. XSLT</h2>
+    <h2>Exercicio 3. XSLT</h2>
 
-    <p>Dado el siguiente documento XML, escriba y enlace las hojas de estilo XSLT que devuelvan la respuesta deseada (una para cada caso).</p>
+    <p>Dado o seguinte documento XML, escriba e enlace as follas de estilo XSLT que devolvan a resposta desexada (una para cada caso).</p>
 
-    <p>Para cada apartado, prepare dos ficheros (fichero xml y fichero xsl enlazado).</p>
+    <p>Para cada apartado, prepare dos ficheros (fichero xml e fichero xsl enlazado).</p>
 
     <div class="codigo">
       <pre>
@@ -191,19 +191,19 @@ Hans Zimmer</code>
     &lt;compositor nombre="David Julyan" fecha_nacimiento="1967" pais_nacimiento="UK" /&gt;
   &lt;/compositores&gt;
   &lt;peliculas&gt;
-    &lt;pelicula titulo="Uno de los nuestros"&gt;
+    &lt;pelicula titulo="Uno dos nuestros"&gt;
       &lt;estreno&gt;1990&lt;/estreno&gt;
       &lt;titulo&gt;Goodfellas&lt;/titulo&gt;
       &lt;director&gt;Martin Scorsese&lt;/director&gt;
       &lt;compositor&gt;Varios&lt;/compositor&gt;
     &lt;/pelicula&gt;
-    &lt;pelicula titulo="Thelma y Louise"&gt;
+    &lt;pelicula titulo="Thelma e Louise"&gt;
       &lt;estreno&gt;1991&lt;/estreno&gt;
-      &lt;titulo&gt;Thelma y Louise&lt;/titulo&gt;
+      &lt;titulo&gt;Thelma e Louise&lt;/titulo&gt;
       &lt;director&gt;Ridley Scott&lt;/director&gt;
       &lt;compositor&gt;Hans Zimmer&lt;/compositor&gt;
     &lt;/pelicula&gt;
-    &lt;pelicula titulo="El truco final"&gt;
+    &lt;pelicula titulo="O truco final"&gt;
       &lt;estreno&gt;2006&lt;/estreno&gt;
       &lt;titulo&gt;The Prestige&lt;/titulo&gt;
       &lt;director&gt;Christopher Nolan&lt;/director&gt;
@@ -215,7 +215,7 @@ Hans Zimmer</code>
       &lt;director&gt;Christopher Nolan&lt;/director&gt;
       &lt;compositor&gt;Hans Zimmer&lt;/compositor&gt;
     &lt;/pelicula&gt;
-   &lt;pelicula titulo="La cabaña en el bosque"&gt;
+   &lt;pelicula titulo="La cabaña no bosque"&gt;
       &lt;estreno&gt;2011&lt;/estreno&gt;
       &lt;titulo&gt;The Cabin in the Woods&lt;/titulo&gt;
       &lt;director&gt;Drew Goddard&lt;/director&gt;
@@ -235,21 +235,21 @@ Hans Zimmer</code>
           <pre>
 <code class="language-xml">&lt;?xml <span class="attr-name">version</span>=<span class="attr-value">"1.0"</span> <span class="attr-name">encoding</span>=<span class="attr-value">"UTF-8"</span>?&gt;
 &lt;html&gt;
- &lt;h1&gt;Enciclopedia del cine&lt;/h1&gt;
+ &lt;h1&gt;Enciclopedia do cine&lt;/h1&gt;
 
 &lt;h2&gt;Gente&lt;/h2&gt;
-&lt;p&gt;El director de cine &lt;strong&gt;Christopher Nolan&lt;/strong&gt; nació en UK en 1970.&lt;/p&gt;
-&lt;p&gt;El director de cine &lt;strong&gt;Martin Scorsese&lt;/strong&gt; nació en EEUU en 1942.&lt;/p&gt;
-&lt;p&gt;El director de cine &lt;strong&gt;Drew Goddard&lt;/strong&gt; nació en EEUU en 1975.&lt;/p&gt;
-&lt;p&gt;El compositor &lt;strong&gt;Hans Zimmer&lt;/strong&gt; nació en Alemania en 1957.&lt;/p&gt;
-&lt;p&gt;El compositor &lt;strong&gt;David Julyan&lt;/strong&gt; nació en UK en 1967.&lt;/p&gt;
+&lt;p&gt;O director de cine &lt;strong&gt;Christopher Nolan&lt;/strong&gt; nació en UK en 1970.&lt;/p&gt;
+&lt;p&gt;O director de cine &lt;strong&gt;Martin Scorsese&lt;/strong&gt; nació en EEUU en 1942.&lt;/p&gt;
+&lt;p&gt;O director de cine &lt;strong&gt;Drew Goddard&lt;/strong&gt; nació en EEUU en 1975.&lt;/p&gt;
+&lt;p&gt;O compositor &lt;strong&gt;Hans Zimmer&lt;/strong&gt; nació en Alemania en 1957.&lt;/p&gt;
+&lt;p&gt;O compositor &lt;strong&gt;David Julyan&lt;/strong&gt; nació en UK en 1967.&lt;/p&gt;
 
 &lt;h2&gt;Películas&lt;/h2&gt;
-&lt;p&gt;La película &lt;strong&gt;Uno de los nuestros&lt;/strong&gt; fue dirigida por Martin Scorsese.&lt;/p&gt;
-&lt;p&gt;La película &lt;strong&gt;Thelma y Louise&lt;/strong&gt; fue dirigida por Ridley Scott.&lt;/p&gt;
-&lt;p&gt;La película &lt;strong&gt;El truco final&lt;/strong&gt; fue dirigida por Christopher Nolan.&lt;/p&gt;
+&lt;p&gt;La película &lt;strong&gt;Uno dos nuestros&lt;/strong&gt; fue dirigida por Martin Scorsese.&lt;/p&gt;
+&lt;p&gt;La película &lt;strong&gt;Thelma e Louise&lt;/strong&gt; fue dirigida por Ridley Scott.&lt;/p&gt;
+&lt;p&gt;La película &lt;strong&gt;O truco final&lt;/strong&gt; fue dirigida por Christopher Nolan.&lt;/p&gt;
 &lt;p&gt;La película &lt;strong&gt;Origen&lt;/strong&gt; fue dirigida por Christopher Nolan.&lt;/p&gt;
-&lt;p&gt;La película &lt;strong&gt;La cabaña en el bosque&lt;/strong&gt; fue dirigida por Drew Goddard.&lt;/p&gt;
+&lt;p&gt;La película &lt;strong&gt;La cabaña no bosque&lt;/strong&gt; fue dirigida por Drew Goddard.&lt;/p&gt;
 &lt;/html&gt;</code>
 </pre>
         </div>
@@ -258,12 +258,12 @@ Hans Zimmer</code>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 10 de junio de 2013</p>
+    <p class="ultmod">Última modificación de esta páxina: 10 de xuño de 2013</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Lenguaje de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+      Esta páxina forma parte do curso <strong><a href="https://www.mclibre.org/consultar/xml/">XML: Linguaxe de marcas extensible</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo unha <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>
 </body>

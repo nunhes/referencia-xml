@@ -7,10 +7,10 @@
    21 de abril de 2018
 */
 
-/* Los estilos para trozos sueltos están en la hoja de estilo de los apuntes */
+/* Los estilos para trozos sueltos están na folla de estilo dos apuntes */
 
 /* Estilo para XML imitando a XML Copy Editor */
-/* Tengo pendiente comprobar los nombres de las clases en prism */
+/* Tengo pendiente comprobar os nombres de as clases en prism */
 
 code.language-xml { }
 code.xml-malformado, code.xml-invalido { }
@@ -26,7 +26,7 @@ code.language-xml .punctuation { color: #446FBD; } /*                           
 code.language-xml .tag         { color: #0000FF; } /* any tag from "<" till ">"              */
 
 /* Estilo para CSS imitando a XML Copy Editor */
-/* Todvía no pasado a Prism del todo */
+/* Todvía no pasado a Prism do todo */
 
 code.language-css { _font-weight: bold; _font-size: 115%; _line-height: 120%;}
 
